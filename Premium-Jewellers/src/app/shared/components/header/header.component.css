@@ -1,0 +1,16 @@
+header .logo{
+    display: flex;
+    justify-content: center;
+}
+form{
+    grid-gap: 10px;
+    align-items: center;
+}
+form .icon i{
+    font-size: 28px;
+    color: var(--primary-color);
+}
+form .icon i:hover{
+    color: var(--primary-dark);
+    transition: all 0.3s;
+}

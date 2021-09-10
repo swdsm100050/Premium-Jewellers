@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+*{
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --primary-color: #851753;
+    --primary-dark: #430C2A;
+    --primary-bg: #851753;
+    --secondary-color: #fff;
+    --secondary-bg: #ddd;
+  }
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #000;
+}
+.p-btn{
+    background: var(--primary-bg);
+    color: #fff;
+    border: 1px solid var(--primary-dark);
+}
+.p-btn:hover{
+    color: #fff;
+    background: var(--primary-dark);
+    transition: all 0.3s
+}
+.s-btn{
+    background: var(--secondary-bg);
+    border: 1px solid #777;
+}
+.s-btn:hover{
+    background: #ccc;
+    transition: all 0.3s
+}

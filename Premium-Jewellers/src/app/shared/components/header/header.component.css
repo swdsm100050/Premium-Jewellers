@@ -1,21 +1,62 @@
-header .logo{
-    display: flex;
-    justify-content: center;
+header .logo {
+  display: flex;
+  justify-content: center;
 }
-nav .navbar .nav-item a{
-color: #000;
-font-size: 16px;
-font-weight: 400;
+nav .navbar-nav .nav-item {
+  position: relative;
+  cursor: pointer;
+  height: 45px;
+  align-items: center;
+  display: flex;
 }
-form{
-    grid-gap: 10px;
-    align-items: center;
+nav .navbar-nav .nav-item a {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0px 10px;
 }
-form .icon i{
-    font-size: 28px;
-    color: var(--primary-color);
+nav .navbar-nav .nav-item:hover a {
+  color: var(--primary-color);
 }
-form .icon i:hover{
-    color: var(--primary-dark);
-    transition: all 0.3s;
+nav .navbar-nav .nav-item:hover a::after {
+  width: 90%;
+}
+nav .navbar-nav .nav-item a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  left: 50%;
+  bottom: 4px;
+  position: absolute;
+  transition: all 0.5s;
+  transform: translateX(-50%);
+  /* transform: scaleX(); */
+}
+form {
+  grid-gap: 10px;
+  align-items: center;
+}
+form .icon i {
+  font-size: 28px;
+  color: var(--primary-color);
+}
+form .icon i:hover {
+  color: var(--primary-dark);
+  transition: all 0.3s;
+}
+.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+}
+nav.sticky {
+  transition: all 0.5s;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 10px #ccc, 0px 0px 30px #ccc;
+  background: #fff;
 }

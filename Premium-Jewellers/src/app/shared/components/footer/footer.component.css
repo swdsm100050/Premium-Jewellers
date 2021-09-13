@@ -25,6 +25,11 @@ footer .subscribe .sub-now .btn-group input {
 footer .subscribe .sub-now .btn-group button {
   padding: 5px 10px;
   border: 0;
+  background: radial-gradient(
+    circle,
+    rgba(133, 23, 83, 1) 0%,
+    rgba(67, 12, 42, 1) 100%
+  );
 }
 footer .subscribe .know-more p {
   font-size: 16px;

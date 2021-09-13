@@ -33,7 +33,7 @@
   width: 80%;
 }
 .explore .box .desc p {
-  font-size: 24px;
+  font-size: 20px;
 }
 .explore .box .desc button {
   font-size: 18px;
@@ -86,7 +86,7 @@
   text-align: center;
 }
 .selected .boxed .desc p {
-  font-size: 24px;
+  font-size: 20px;
 }
 .selected .boxed .desc button {
   font-size: 18px;

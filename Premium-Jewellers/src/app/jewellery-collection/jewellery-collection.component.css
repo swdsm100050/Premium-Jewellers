@@ -1,0 +1,164 @@
+.banner {
+  background: url("../../assets/jewellery-collection/jewellery-collection-banner.png");
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  margin: 25px 0px;
+}
+.banner .heading h2 {
+  color: var(--primary-color);
+  position: relative;
+  width: fit-content;
+}
+.banner .heading h2::after {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 2px;
+  background: #eee;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.banner .heading p {
+  color: #333;
+  font-size: 15px;
+}
+.most-loved {
+  margin: 25px 0px;
+}
+.most-loved .heading .title {
+  margin: 25px 0px;
+}
+.most-loved .heading .title h2 {
+  position: relative;
+  text-transform: uppercase;
+  width: fit-content;
+}
+.most-loved .heading .title h2::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  width: 98%;
+  background: var(--primary-color);
+  transform: translateX(-50%);
+}
+.most-loved .box .card {
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.most-loved .box .card:hover {
+  box-shadow: 0px 0px 10px #eee, 0px 0px 30px #eee;
+  transition: all 0.3s;
+}
+.most-loved .box .card .img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.most-loved .box .card .img:hover a {
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #fff;
+  color: #fff;
+  display: block;
+  transition: all 0.5s;
+}
+.most-loved .box .card .img a {
+  display: none;
+}
+.most-loved .box .card .img:hover img {
+  filter: contrast(0.8);
+  transition: all 0.1s;
+}
+.most-loved .box .card .desc {
+  text-align: center;
+  padding: 10px 0px;
+  color: #333;
+}
+.most-loved .box .card .desc h5 {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  position: relative;
+  width: fit-content;
+}
+.most-loved .box .card .desc h5::after {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 1px;
+  background: #333;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.most-loved .box .card .desc p {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #555;
+}
+.adds {
+  margin: 25px 0px;
+}
+
+.explore .heading .title {
+  margin: 25px 0px;
+}
+.explore .heading .title h2 {
+  position: relative;
+  text-transform: uppercase;
+  width: fit-content;
+}
+.explore .heading .title h2::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  width: 98%;
+  background: var(--primary-color);
+  transform: translateX(-50%);
+}
+.explore .card .c-btn {
+  border: 1px solid #999;
+  text-transform: uppercase;
+  color: #555;
+  font-weight: 600;
+}
+.explore .card .c-btn:hover {
+  background: #eee;
+}
+/* corousal */
+.owl-carousel .owl-item {
+  text-align: center;
+}
+.owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  box-shadow: 0px 0px 10px #ccc;
+}
+.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  box-shadow: 0px 0px 10px #ccc;
+}
+/* corousal */

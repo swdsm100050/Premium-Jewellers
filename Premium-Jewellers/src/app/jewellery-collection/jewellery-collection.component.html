@@ -1,0 +1,103 @@
+<section class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="heading text-center">
+                    <h2 class="mx-auto">OUR COLLECTION</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor est magni non culpa debitis
+                        voluptates, veniam accusantium recusandae id sit accusamus incidunt suscipit ex qui amet,
+                        dolores voluptate nesciunt reprehenderit!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="most-loved">
+    <div class="container">
+        <div class="heading">
+            <div class="title">
+                <h2 class="mx-auto">most loved</h2>
+            </div>
+        </div>
+        <div class="box">
+            <div class="row">
+                <div class="col-md-4 px-4 my-3" *ngFor="let item of loved">
+                    <div class="card">
+                        <div class="img">
+                            <img class="w-100" [src]="item.imgUrl" alt="">
+                            <a href="" class="btn">view collection</a>
+                        </div>
+                        <div class="desc">
+                            <h5 class="mx-auto"> {{item.title}} </h5>
+                            <p> {{item.shortDesc}} </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="adds">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="img">
+                    <img class="rounded" src="../../assets/jewellery-collection/adds.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="most-loved">
+    <div class="container">
+        <div class="heading">
+            <div class="title">
+                <h2 class="mx-auto">most popular</h2>
+            </div>
+        </div>
+        <div class="box">
+            <div class="row">
+                <div class="col-md-4 px-4 my-3" *ngFor="let item of popular">
+                    <div class="card">
+                        <div class="img">
+                            <img class="w-100" [src]="item.imgUrl" alt="">
+                            <a href="" class="btn">view collection</a>
+                        </div>
+                        <div class="desc">
+                            <h5 class="mx-auto"> {{item.title}} </h5>
+                            <p> {{item.shortDesc}} </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="explore">
+    <div class="container">
+        <div class="heading">
+            <div class="title">
+                <h2 class="mx-auto">most popular</h2>
+            </div>
+        </div>
+        <owl-carousel-o [options]="customOptions">
+            <ng-container *ngFor="let slide of slides">
+                <ng-template carouselSlide>
+                    <div class="card p-4 border-0">
+                        <button class="btn c-btn my-3"> {{slide.btn1}} </button><br>
+                        <button class="btn c-btn">{{slide.btn2}}</button>
+                    </div>
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+        <!-- <owl-carousel-o [options]="customOptions">
+
+            <ng-container *ngFor="let slide of slidesStore">
+                <ng-template carouselSlide [id]="slide.id">
+                    <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+                </ng-template>
+            </ng-container>
+
+        </owl-carousel-o> -->
+    </div>
+</section>

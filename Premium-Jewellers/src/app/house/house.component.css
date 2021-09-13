@@ -1,0 +1,101 @@
+.banner {
+  background-image: linear-gradient(#ffffff80 0%, #ffffff80 100%),
+    url("../../assets/jewellery-collection/jewellery-collection-banner.png");
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+.banner h2 {
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+.banner .btn-group {
+  border: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #fff;
+  align-items: center;
+}
+.banner .btn-group input {
+  outline: none;
+  border: none;
+}
+.banner .btn-group button {
+  padding: 8px 10px;
+  border: 0;
+  background: radial-gradient(
+    circle,
+    rgba(133, 23, 83, 1) 0%,
+    rgba(67, 12, 42, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+}
+.banner .btn-group i {
+  color: #555;
+  font-size: 16px;
+  padding: 0px 7px;
+}
+.banner .play {
+  margin: 25px 0px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.banner .play a i {
+  color: var(--primary-color);
+  padding: 15px 18px;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.banner .play a:nth-child(2) {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #777;
+  margin: 10px 0px;
+}
+.banner .play a:nth-child(2):hover {
+  color: #333;
+  transition: all 0.5s;
+}
+.special-cards {
+  margin: 25px 0px;
+}
+.special-cards .cards {
+  display: flex;
+  justify-content: center;
+}
+.special-cards .cards:nth-child(1) .card {
+  max-width: 540px;
+  background: #eee;
+  border: 0;
+}
+.special-cards .cards:nth-child(2) .card {
+  max-width: 540px;
+  background: #ffdf9c;
+  border: 0;
+}
+.special-cards .card .card-body .card-title {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.special-cards .card .card-body .card-text {
+  font-weight: lighter;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.faqs {
+  margin: 25px 0px;
+}
+.faqs .box {
+  background: #eee;
+  padding: 25px;
+  border-radius: 5px;
+}
+.faqs .box .card {
+  text-align: center;
+  justify-content: center;
+  display: block;
+}

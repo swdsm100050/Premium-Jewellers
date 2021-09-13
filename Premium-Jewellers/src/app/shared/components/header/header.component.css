@@ -2,6 +2,9 @@ header .logo {
   display: flex;
   justify-content: center;
 }
+nav .navbar-nav {
+  grid-gap: 25px;
+}
 nav .navbar-nav .nav-item {
   position: relative;
   cursor: pointer;
@@ -11,15 +14,19 @@ nav .navbar-nav .nav-item {
 }
 nav .navbar-nav .nav-item a {
   color: #000;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
-  padding: 0px 10px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 0;
 }
-nav .navbar-nav .nav-item:hover a {
+nav .navbar-nav .nav-item:hover a,
+nav .navbar-nav .nav-item a.active {
   color: var(--primary-color);
 }
-nav .navbar-nav .nav-item:hover a::after {
-  width: 90%;
+nav .navbar-nav .nav-item:hover a::after,
+nav .navbar-nav .nav-item a.active::after {
+  width: 98%;
 }
 nav .navbar-nav .nav-item a::after {
   content: "";

@@ -20,22 +20,43 @@
                             <a class="nav-link" routerLink="/high-jewellery" routerLinkActive="active"
                                 aria-current="page">high jewellery</a>
                         </li>
+                        <div class="sub-menu">
+                            <div class="row">
+                                <div class="col-md-12" *ngFor="let data of jewellery">
+                                    <ul *ngFor="let c of data.rows">
+                                        <li *ngFor="let x of c.cols">{{x}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <li class="nav-item">
                             <a class="nav-link" routerLink="/jewellery-collection" routerLinkActive="active"
                                 aria-current="page">jewellery collections </a>
                         </li>
+                        <div class="sub-menu">
+                            <h1>submenu</h1>
+                        </div>
                         <li class="nav-item">
                             <a class="nav-link" routerLink="/engagement" routerLinkActive="active"
                                 aria-current="page">engagement & bridal </a>
                         </li>
+                        <div class="sub-menu">
+                            <h1>submenu</h1>
+                        </div>
                         <li class="nav-item">
                             <a class="nav-link" routerLink="/watches" routerLinkActive="active"
                                 aria-current="page">watches </a>
                         </li>
+                        <div class="sub-menu">
+                            <h1>submenu</h1>
+                        </div>
                         <li class="nav-item">
                             <a class="nav-link" routerLink="/house" routerLinkActive="active" aria-current="page">the
                                 house </a>
                         </li>
+                        <div class="sub-menu">
+                            <h1>submenu</h1>
+                        </div>
 
                     </ul>
                     <form class="d-flex">

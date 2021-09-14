@@ -77,10 +77,10 @@ footer .footer :is(.service, .company, .tiffany) li a:hover::after {
   width: 95%;
 }
 footer .footer ul .link {
-  font-size: 16px;
+  font-size: 15px;
 }
 footer .footer ul .title {
-  font-size: 22px;
+  font-size: 20px;
 }
 footer .footer .social ul {
   display: flex;

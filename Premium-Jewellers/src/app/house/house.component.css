@@ -1,10 +1,11 @@
 .banner {
-  background-image: linear-gradient(#ffffff80 0%, #ffffff80 100%),
-    url("../../assets/jewellery-collection/jewellery-collection-banner.png");
+  background-image: linear-gradient(#7433861a 0%, #74338638 100%),
+    url("../../assets/house/house-banner.png");
   background-size: cover;
   height: 400px;
   display: flex;
   align-items: center;
+  background-repeat: round;
 }
 .banner h2 {
   text-transform: capitalize;
@@ -33,9 +34,9 @@
   text-transform: capitalize;
 }
 .banner .btn-group i {
-  color: #555;
+  color: var(--primary-color);
   font-size: 16px;
-  padding: 0px 7px;
+  padding: 0 7px;
 }
 .banner .play {
   margin: 25px 0px;
@@ -53,12 +54,13 @@
 .banner .play a:nth-child(2) {
   font-size: 18px;
   text-transform: capitalize;
-  color: #777;
+  color: #fff;
   margin: 10px 0px;
 }
 .banner .play a:nth-child(2):hover {
-  color: #333;
+  color: #fff;
   transition: all 0.5s;
+  font-weight: 500;
 }
 .special-cards {
   margin: 25px 0px;
@@ -69,13 +71,19 @@
 }
 .special-cards .cards:nth-child(1) .card {
   max-width: 540px;
-  background: #eee;
+  background: url("../../assets/house/card1.png");
+  background-repeat: no-repeat;
   border: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .special-cards .cards:nth-child(2) .card {
   max-width: 540px;
   background: #ffdf9c;
   border: 0;
+  height: 100%;
 }
 .special-cards .card .card-body .card-title {
   text-transform: capitalize;
@@ -86,11 +94,84 @@
   text-transform: capitalize;
   font-size: 15px;
 }
+.delivery {
+  margin: 25px 0px;
+  padding: 25px 0px;
+}
+.delivery .box .card-body {
+  text-align: center;
+  text-transform: capitalize;
+}
+.delivery .box .card-body .icon i {
+  font-size: 70px;
+  color: var(--primary-color);
+}
+.delivery .box .card-body .text p {
+  color: #555;
+}
+.locate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(#dcd8d845 0%, #dcd8d845 100%),
+    url("../../assets/house/locate-banner.png");
+  background-size: cover;
+  min-height: 300px;
+  background-repeat: no-repeat;
+}
+.locate .box p {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.locate .box .inp-group {
+  background: #fff;
+  padding: 7px 6px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ddd;
+  width: 100% !important;
+  text-align: start;
+}
+.locate .box .inp-group i {
+  padding: 5px;
+  color: var(--primary-color);
+}
+.locate .box .inp-group input {
+  outline: none;
+  border: 0;
+}
+.locate .box .submit button {
+  background: radial-gradient(
+    circle,
+    rgba(133, 23, 83, 1) 0%,
+    rgba(67, 12, 42, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+  margin: 10px 0px;
+  width: 100%;
+}
+.locate .box .link a {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.locate .box .link a:hover {
+  transition: all 0.5s;
+}
+.reviews {
+  margin: 25px 0px;
+  padding: 25px 0px;
+}
+.reviews .box .content .rating i {
+  padding: 0 3px;
+  color: #ff9529;
+  font-size: 20px;
+}
 .faqs {
   margin: 25px 0px;
 }
 .faqs .box {
-  background: #eee;
+  background: #dddddd47;
   padding: 25px;
   border-radius: 5px;
 }
@@ -98,4 +179,41 @@
   text-align: center;
   justify-content: center;
   display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 25px;
+  border: 0;
+  box-shadow: 0px 0px 10px #ddd;
+  border-radius: 15px;
+}
+/* .faqs .box .card {
+} */
+.faqs .box .accordion-item {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-style: dashed;
+}
+.faqs .box .accordion {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px #ddd;
+}
+.faqs .box .accordion-item:nth-child(last) {
+  border-bottom: 0 !important;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  color: #333;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-style: dashed;
+  font-size: 18px;
+  transition: all 0.5s;
+}
+.accordion-button:not(.collapsed):after {
+  transform: rotate(0deg);
+}
+.accordion-button:after {
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(-90deg);
 }

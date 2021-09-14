@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,7 @@ import { NgModule} from '@angular/core';
   imports: [
     CarouselModule,
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
   ],

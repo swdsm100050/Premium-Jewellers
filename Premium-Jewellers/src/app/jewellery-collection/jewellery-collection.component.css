@@ -150,6 +150,10 @@
   background: #fff;
   color: #000;
   box-shadow: 0px 0px 10px #ccc;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
 }
 .owl-carousel .owl-nav .owl-next {
   position: absolute;
@@ -160,5 +164,9 @@
   background: #fff;
   color: #000;
   box-shadow: 0px 0px 10px #ccc;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
 }
 /* corousal */

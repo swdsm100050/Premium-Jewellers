@@ -1,0 +1,197 @@
+<header>
+    <!-- <div class="sale">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-12">
+                    <p>50% off on making charges | use coupon <span>diwali</span></p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="header">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+
+                <div class="col-md-4">
+                    <div class="img">
+                        <img src="../../assets/header/logo.png" alt="">
+                        <!-- <img src="" alt=""> -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="input">
+                        <input type="text" name="" id="" placeholder="Search for Jewellery">
+                        <button><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-around align-items-center">
+                    <div class="login">
+                        <p><i class="bi bi-person-fill"></i> Login/Signup</p>
+                    </div>
+                    <div class="wishlist">
+                        <p><i class="bi bi-heart"><span>0</span></i> Wishlist</p>
+                    </div>
+                    <div class="cart">
+                        <p><i class="bi bi-cart4"><span>0</span></i> My Cart</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg p-0" [class.sticky]="isSticky">
+        <div class="container">
+            <!-- <a class="navbar-brand" href="#">
+                <img class="rounded-circle" style="width: 30px;height: 30px;" src="../../../../assets/header/logo.png"
+                    alt="">
+            </a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">T</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/high-jewellery" routerLinkActive="active"
+                            aria-current="page">high jewellery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/jewellery-collection" routerLinkActive="active"
+                            aria-current="page">jewellery collections </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/engagement" routerLinkActive="active"
+                            aria-current="page">engagement & bridal </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/watches" routerLinkActive="active" aria-current="page">watches
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/house" routerLinkActive="active" aria-current="page">the
+                            house </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<router-outlet></router-outlet>
+<router-outlet name="user"></router-outlet>
+<footer>
+    <section class="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 d-flex align-items-center justify-content-end">
+                    <div class="row">
+                        <div class="sub-now col-md-12 d-flex justify-content-end align-items-center">
+                            <p class="m-0">Sign Up for Our Offer Updates: </p>
+                            <div class="btn-group">
+                                <input type="text" name="" id="" placeholder="Enter Your Name">
+                                <button class="p-btn">Subscribe Now</button>
+                            </div>
+                        </div>
+                        <div class="know-more col-md-12">
+                            <p class="m-0 text-end"><span>Know More </span> about Premium Jewellers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="img">
+                        <img src="../../../../assets/footer/subscribe-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-2">
+                    <ul class="service">
+                        <li class="title">Customer Service</li>
+                        <li class="link"><a href="">Contact Us</a></li>
+                        <li class="link"><a href="">Product Care & Repair</a></li>
+                        <li class="link"><a href="">Call Now: 9876543210</a></li>
+                        <li class="link"><a href="">Make An Appointment</a></li>
+                        <li class="link"><a href="">Frequently Asked Questions </a></li>
+                        <li class="link"><a href="">Shipping & Returns</a></li>
+                        <li class="link"><a href="">Tiffany Select Financing</a></li>
+                        <li class="link"><a href="">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <ul class="company">
+                        <li class="title">Our Company</li>
+                        <li class="link"><a href="">World Of Tiffany</a></li>
+                        <li class="link"><a href="">Sustainability</a></li>
+                        <li class="link"><a href="">CA Supply Chains ACT</a></li>
+                        <li class="link"><a href="">Investors</a></li>
+                        <li class="link"><a href="">Tiffany Careers</a></li>
+                        <li class="link"><a href="">Website Policies</a></li>
+                        <li class="link"><a href="">California Privacy</a></li>
+                        <li class="link"><a href="">Do Not Sell My Info</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <ul class="tiffany">
+                        <li class="title">Related Tiffany Sites</li>
+                        <li class="link"><a href="">Wedding & Gift Registry</a></li>
+                        <li class="link"><a href="">Business Accounts</a></li>
+                        <li class="link"><a href="">Tiffany For The Press</a></li>
+                        <li class="link"><a href="">The Tiffany & Co. Foundation</a></li>
+                        <li class="link"><a href="">Site Index</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <ul class="tiffany">
+                        <li class="title">Related Tiffany Sites</li>
+                        <li class="link"><a href="">Wedding & Gift Registry</a></li>
+                        <li class="link"><a href="">Business Accounts</a></li>
+                        <li class="link"><a href="">Tiffany For The Press</a></li>
+                        <li class="link"><a href="">The Tiffany & Co. Foundation</a></li>
+                        <li class="link"><a href="">Site Index</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <ul class="tiffany">
+                        <li class="title">Related Tiffany Sites</li>
+                        <li class="link"><a href="">Wedding & Gift Registry</a></li>
+                        <li class="link"><a href="">Business Accounts</a></li>
+                        <li class="link"><a href="">Tiffany For The Press</a></li>
+                        <li class="link"><a href="">The Tiffany & Co. Foundation</a></li>
+                        <li class="link"><a href="">Site Index</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="col-lg-2">
+                    <ul class="social">
+                            <li class="title">Follow Us On</li>
+                            <li class="link"><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li class="link"><a href=""><i class="fa fa-youtube-play"></i></a></li>
+                            <li class="link"><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li class="link"><a href=""><i class="fa fa-pinterest"></i></a></li>
+                            <li class="link"><a href=""><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <div class="col-md-12">
+        <hr>
+    </div>
+    <div class="copy-rights">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <ul class="social">
+                    <li class="title">Follow Us On</li>
+                    <li class="link"><a href=""><i class="fa fa-facebook"></i></a></li>
+                    <li class="link"><a href=""><i class="fa fa-youtube-play"></i></a></li>
+                    <li class="link"><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li class="link"><a href=""><i class="fa fa-pinterest"></i></a></li>
+                    <li class="link"><a href=""><i class="fa fa-instagram"></i></a></li>
+                </ul>
+                <p class="text-center">© 2020 <span>PREMIUM JEWELLERS.</span> All Rights Reserved </p>
+            </div>
+        </div>
+    </div>
+</footer>

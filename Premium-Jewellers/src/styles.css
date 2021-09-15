@@ -46,6 +46,10 @@ a:hover {
   background: #ddd;
   transition: all 0.3s;
 }
+.trans-btn {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+}
 .title h3 {
   position: relative;
   width: fit-content;

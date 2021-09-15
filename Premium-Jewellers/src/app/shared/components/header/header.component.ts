@@ -12,18 +12,18 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  jewellery=[
-    {"rows":[
-            {"cols":[{"name":"titles"},"links","links","links","links","links","links","links","links","links","links"]},
-            {"cols":["titles","links","links","links","links","links","links","links","links","links","links"]},
-          ]
-    },
-    {"rows":[
-      {"cols":["titles","links","links","links","links","links","links","links","links","links","links"]},
-      {"cols":["titles","links","links","links","links","links","links","links","links","links","links"]},
-    ]
-},
-  ]
+//   jewellery=[
+//     {"rows":[
+//             {"cols":[{"name":"titles"},"links","links","links","links","links","links","links","links","links","links"]},
+//             {"cols":["titles","links","links","links","links","links","links","links","links","links","links"]},
+//           ]
+//     },
+//     {"rows":[
+//       {"cols":["titles","links","links","links","links","links","links","links","links","links","links"]},
+//       {"cols":["titles","links","links","links","links","links","links","links","links","links","links"]},
+//     ]
+// },
+//   ]
   @HostListener('document:scroll')
   scrollFunction() {
     document.body.scrollTop > 60 || document.documentElement.scrollTop > 60

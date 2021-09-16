@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { UserComponent } from './user.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from '../app-routing.module';
-import { GiftingComponent } from './gifting/gifting.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ProductsComponent } from './products/products.component';
 
 
 
@@ -12,7 +12,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
   declarations: [
     UserComponent,
     DashboardComponent,
-    GiftingComponent
+    ProductsComponent
   ],
   imports: [
     CommonModule,

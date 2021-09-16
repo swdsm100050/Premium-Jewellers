@@ -1,0 +1,78 @@
+<div class="container">
+    <section class="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+    </section>
+    <section class="offer">
+        <div class="img">
+            <img src="../../../assets/user/products/offer1.png" alt="">
+        </div>
+    </section>
+    <section class="filters">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="filter_by">
+                    <h5>filter by</h5>
+                    <div class="options">
+                        <select class="" aria-label="Default select example" *ngFor="let filter of filters">
+                            <option selected>{{filter.title}}</option>
+                            <option *ngFor="let option of filter.options">{{option}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="sort_by">
+                    <h5>sort by</h5>
+                    <div class="options">
+                        <select class="" aria-label="Default select example" *ngFor="let filter of sort_by">
+                            <option selected>{{filter.title}}</option>
+                            <option *ngFor="let option of filter.options">{{option}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="list_product">
+        <div class="head">
+            <p>filter by</p><span>ring<span><i class="bi bi-x"></i></span></span>
+        </div>
+        <div class="box">
+            <div class="row">
+                <div *ngFor="let slide of products" [class]="slide.col">
+                    <div class="card">
+                        <div class="img">
+                            <img [src]="slide.svg_url1" alt="">
+                            <img [src]="slide.svg_url2" alt="">
+                        </div>
+                        <div class="desc">
+                            <div class="title">{{slide.title}}</div>
+                            <div class="price">
+                                <span class="mrp">₹{{slide.mrp}}</span>
+                                <span class="discount">save ₹{{slide.discount}}</span>
+                            </div>
+                        </div>
+                        <div class="add-offer">
+                            <span><i class="bi bi-star-fill"></i> bestseller</span>
+                            <span><i class="bi bi-heart"></i></span>
+                        </div>
+                        <div class="on_hover">
+                            <div>
+                                <a href=""><i class="bi bi-stack"></i></a>
+                                <a href=""><i class="bi bi-stack"></i></a>
+                                <a href=""><i class="bi bi-stack"></i></a>
+                            </div>
+                            <div>
+                                <a href="">view details <i class="bi bi-chevron-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

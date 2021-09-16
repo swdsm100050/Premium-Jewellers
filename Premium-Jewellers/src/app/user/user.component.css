@@ -189,11 +189,14 @@ footer .footer :is(.service, .company, .tiffany) li a:hover::after {
   width: 95%;
 }
 footer .footer ul .link {
-  font-size: 15px;
+  font-size: 13px;
+  text-transform: capitalize;
 }
 footer .footer ul .title {
-  font-size: 20px;
+  font-size: 17px;
   margin-bottom: 2px;
+  text-transform: uppercase;
+  inline-size: max-content;
 }
 footer .footer .social ul {
   display: flex;

@@ -1,0 +1,169 @@
+<div class="container">
+    <section class="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+    </section>
+    <section class="basic-detail">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="imgs">
+                    <div class="main-img">
+                        <img class="rounded" style="width: -webkit-fill-available;"
+                            src="../../../assets/user/dashboard/category33.png" alt="">
+                    </div>
+                    <div class="slide-img">
+                        <owl-carousel-o [options]="customOptions">
+                            <ng-container *ngFor="let slide of slides">
+                                <ng-template carouselSlide>
+                                    <div class="img" style="margin: 10px 5px;">
+                                        <img class="rounded img-thumbnail" [src]="slide.imgUrl" alt="">
+                                    </div>
+                                </ng-template>
+                            </ng-container>
+                        </owl-carousel-o>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="product_name">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>pauletta diamond ring</h4>
+                            <p><span>you save</span>₹4000(10%)</p>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center justify-content-end">
+                            <div class="share">
+                                <i class="bi bi-stack"></i>
+                                <i class="bi bi-share-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="discounted_price">₹140000</div>
+                    <div class="mrp">₹140000</div>
+                </div>
+                <div class="variant">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Link with href <i class="bi bi-caret-down-fill"></i>
+                            </a>
+                            <div class="feature">
+                                <span>metal grade:24k</span>
+                                <span><i class="bi bi-gem"></i>diamond quality:ij-si</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    Some placeholder content for the collapse component. This panel is hidden by default
+                                    but revealed when the user activates the relevant trigger.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <p>schedule your free <span>trial at home</span></p>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="">your pincode</label>
+                                    <div class="input-group">
+                                        <input type="text" name="" id="" placeholder="400095">
+                                        <a>update</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="">select size</label>
+                                    <select>
+                                        <option selected>1</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <span class="text-muted">
+                                        not sure about ring size?
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <span>delivery by: <span>mon, nov 2 for pincode 400095</span></span>
+                                </div>
+                                <div class="col-md-6">
+                                    <span>(*indian ring size)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <a href="">view all designs in stores near you </a>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="p_shortdetail">
+                                <p>need it soon? <span class="text-muted">these product are available</span></p>
+                                <span>diamond ring set in 14k yellow gold (5.5grams) with diamonds (0.34 Ct,Ij-SI)
+                                    certified by igi </span>
+                                <a href="">see more product details</a>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="related_p_title">
+                                <p class="m-0">PreSet solitaire ring in 18k white gold (1.2gram) and solitaire (0.3 Ct)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h6 class="" id="flush-headingOne">
+                                        <a href="" class=" collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                            aria-controls="flush-collapseOne">
+                                            Accordion Item #1
+                                        </a>
+                                    </h6>
+                                    <div id="flush-collapseOne" class=" collapse" aria-labelledby="flush-headingOne"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="">Placeholder content for this accordion, which is
+                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                            first item's accordion body.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h6 class="" id="flush-headingTwo">
+                                        <a href="" class=" collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                            aria-controls="flush-collapseTwo">
+                                            Accordion Item #2
+                                        </a>
+                                    </h6>
+                                    <div id="flush-collapseTwo" class=" collapse" aria-labelledby="flush-headingTwo"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="">Placeholder content for this accordion, which is
+                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                            second item's accordion body. Let's imagine this being filled with some
+                                            actual content.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="buttons">
+                                <button class="btn">but now</button>
+                                <button class="btn">add to cart</button>
+                                <button class="btn">book appointment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

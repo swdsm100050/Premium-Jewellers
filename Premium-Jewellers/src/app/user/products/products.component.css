@@ -7,8 +7,34 @@
 .filters {
   margin: 25px 0px;
 }
-.filters .filter_by h5 {
+.filters .filter_by .head {
+  display: flex;
+  grid-gap: 10px;
+  align-items: center;
+  margin: 15px 0px;
+}
+.filters .filter_by .head h5 {
   text-transform: uppercase;
+  margin: 0;
+}
+.filters .filter_by .head span {
+  background: transparent;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 0px 5px;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #555;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filters .filter_by .head span span {
+  padding: 0;
+  border: 0;
+  font-size: 15px;
+  color: red;
 }
 .filters .filter_by .options {
   display: flex;
@@ -33,8 +59,15 @@
   outline: none;
   border: 0;
 }
-.filters .sort_by h5 {
+.filters .sort_by .head {
+  display: flex;
+  grid-gap: 10px;
+  align-items: center;
+  margin: 15px 0px;
+}
+.filters .sort_by .head h5 {
   text-transform: uppercase;
+  margin: 0;
 }
 .filters .sort_by .options {
   display: flex;
@@ -66,6 +99,17 @@
   background: #eeeeee73;
   overflow: hidden;
   position: relative;
+  width: min-content;
+  box-shadow: 0px 0px 2px #aaa;
+  transition: transform 0.5s ease-in-out;
+}
+.list_product .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px #bbbbbb82, 0 0 100px #bbbbbb59;
+  transition: all 0.5s ease-in-out;
+}
+.list_product .card:hover .desc {
+  background: #fff;
 }
 .list_product .card .img {
   text-align: -webkit-center;
@@ -108,7 +152,7 @@
   text-transform: capitalize;
   -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-  font-weight: 100;
+  font-weight: 400;
   display: flex;
   align-items: center;
 }
@@ -140,7 +184,7 @@
 }
 .list_product .card .desc {
   padding: 15px;
-  background: #ccc;
+  background: #fff;
   text-transform: capitalize;
   z-index: 1;
 }

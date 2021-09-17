@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ProductsComponent } from './products/products.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 
@@ -12,7 +13,8 @@ import { ProductsComponent } from './products/products.component';
   declarations: [
     UserComponent,
     DashboardComponent,
-    ProductsComponent
+    ProductsComponent,
+    ProductDetailComponent
   ],
   imports: [
     CommonModule,

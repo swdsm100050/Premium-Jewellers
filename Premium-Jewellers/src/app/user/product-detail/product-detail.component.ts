@@ -19,6 +19,20 @@ export class ProductDetailComponent implements OnInit {
    {"imgUrl":"../../../assets/user/dashboard/category33.png"},
    {"imgUrl":"../../../assets/user/dashboard/category33.png"},
   ]
+  services=[
+    {"title":"excellent quality","img":"../../../assets/user/dashboard/feature1.svg"},
+    {"title":"excellent quality","img":"../../../assets/user/dashboard/feature2.svg"},
+    {"title":"excellent quality","img":"../../../assets/user/dashboard/feature3.svg"},
+    {"title":"excellent quality","img":"../../../assets/user/dashboard/feature4.svg"},
+    {"title":"excellent quality","img":"../../../assets/user/dashboard/feature5.svg"},
+    {"title":"excellent quality","img":"../../../assets/user/dashboard/feature6.svg"},
+  ]
+  price_variant=[
+    {"title":"excellent quality","img":"../../../assets/home/icon1.png"},
+    {"title":"excellent quality","img":"../../../assets/home/icon1.png"},
+    {"title":"excellent quality","img":"../../../assets/home/icon1.png"},
+    {"title":"excellent quality","img":"../../../assets/home/icon1.png"},
+  ]
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,

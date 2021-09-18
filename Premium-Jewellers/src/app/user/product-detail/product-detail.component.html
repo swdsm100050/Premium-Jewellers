@@ -49,9 +49,9 @@
                 <div class="variant">
                     <div class="row">
                         <div class="col-md-12">
-                            <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                            <a class="text-capitalize" data-bs-toggle="collapse" href="#collapseExample" role="button"
                                 aria-expanded="false" aria-controls="collapseExample">
-                                Link with href <i class="bi bi-caret-down-fill"></i>
+                                hide price breakup <i class="bi bi-caret-down-fill"></i>
                             </a>
                             <div class="feature">
                                 <span>metal grade:24k</span>
@@ -60,9 +60,19 @@
                         </div>
                         <div class="col-md-12">
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    Some placeholder content for the collapse component. This panel is hidden by default
-                                    but revealed when the user activates the relevant trigger.
+                                <div class="card card-body my-3">
+                                    <div class="row">
+                                        <div *ngFor="let service of price_variant" class="col-lg-3">
+                                            <div class="cards rounded">
+                                                <div class="img">
+                                                    <img [src]="service.img" alt="">
+                                                </div>
+                                                <div class="desc">
+                                                    <p>{{service.title}}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -126,14 +136,19 @@
                                         <a href="" class=" collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#flush-collapseOne" aria-expanded="false"
                                             aria-controls="flush-collapseOne">
-                                            Accordion Item #1
+                                            <i class="bi bi-arrow-right-circle-fill">Accordion Item #1</i>
+                                            <i class="bi bi-plus"></i>
+                                            <i class="bi bi-dash"></i>
                                         </a>
                                     </h6>
                                     <div id="flush-collapseOne" class=" collapse" aria-labelledby="flush-headingOne"
                                         data-bs-parent="#accordionFlushExample">
-                                        <div class="">Placeholder content for this accordion, which is
-                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
-                                            first item's accordion body.</div>
+                                        <div class="card-body">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad earum
+                                                accusantium maiores quibusdam culpa facere accusamus eum ea veritatis
+                                                autem deleniti magnam voluptas ex molestiae, iste iusto aliquid ab
+                                                error!</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
@@ -141,15 +156,19 @@
                                         <a href="" class=" collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                             aria-controls="flush-collapseTwo">
-                                            Accordion Item #2
+                                            <i class="bi bi-arrow-right-circle-fill">Accordion Item #2</i>
+                                            <i class="bi bi-plus"></i>
+                                            <i class="bi bi-dash"></i>
                                         </a>
                                     </h6>
                                     <div id="flush-collapseTwo" class=" collapse" aria-labelledby="flush-headingTwo"
                                         data-bs-parent="#accordionFlushExample">
-                                        <div class="">Placeholder content for this accordion, which is
-                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
-                                            second item's accordion body. Let's imagine this being filled with some
-                                            actual content.</div>
+                                        <div class="card-body">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad earum
+                                                accusantium maiores quibusdam culpa facere accusamus eum ea veritatis
+                                                autem deleniti magnam voluptas ex molestiae, iste iusto aliquid ab
+                                                error!</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -164,6 +183,116 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="row">
+            <div *ngFor="let service of services" class="col-lg-2">
+                <div class="card">
+                    <div class="img">
+                        <img [src]="service.img" alt="">
+                    </div>
+                    <div class="desc">
+                        <p>{{service.title}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-detail">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="detail-table">
+                    <table class="">
+                        <tbody>
+                            <tr>
+                                <th><span>product details</span></th>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                            </tr>
+                            <tr>
+                                <th>product details</th>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                            </tr>
+                            <tr>
+                                <th>product details</th>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                            </tr>
+                        </tbody>
+                        <p><span>note</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
+                            recusandae, </p>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="query">
+                    <div class="promise">
+                        <h5>premium jewellers promise</h5>
+                        <div class="row">
+                            <div *ngFor="let service of services" class="col-lg-4">
+                                <div class="card">
+                                    <div class="img">
+                                        <img [src]="service.img" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <p>{{service.title}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="">
+                        <label for=""></label>
+                        <div class="form-group">
+                            <span>name:</span>
+                            <input type="text" name="" id="" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group">
+                            <span>email:</span>
+                            <input type="email" name="" id="" placeholder="Enter Email">
+                        </div>
+                        <div class="form-group">
+                            <span>phone:</span>
+                            <input type="tel" name="" id="" placeholder="Enter Phone No.">
+                        </div>
+                        <div class="form-group">
+                            <span>Query:</span>
+                            <input type="text" name="" id="" placeholder="Your Message">
+                        </div>
+                        <div class="submit">
+                            <button type="submit" class="btn">submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="gurantee">
+                    <div class="col-md-8 mx-auto">
+                        <h6>authenticate your jewellery</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum neque soluta facilis in
+                            impedit repudiandae aperiam sed quae repellendus beatae! Neque nulla dicta sint placeat quae
+                            at quis provident recusandae?<a href="">www.home.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="story">
+
+        <div class="row">
+            <div class="col-md-5">
+
+            </div>
+            <div class="col-md-7"></div>
         </div>
     </section>
 </div>

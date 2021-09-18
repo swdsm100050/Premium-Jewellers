@@ -16,7 +16,7 @@
   font-weight: normal;
 }
 .basic-detail .product_name .share i:nth-child(1) {
-  padding: 5px;
+  padding: 5px 6px;
   border-radius: 50%;
   border: 1px solid var(--primary-color);
   margin: 0px 10px;
@@ -68,6 +68,27 @@
   font-size: 13px;
   margin: 0px 4px;
 }
+/* .basic-detail .variant > div > div:nth-child(2) {
+  margin: 10px 0px;
+} */
+.basic-detail .variant > div > div:nth-child(2) .cards {
+  display: flex;
+  border: 0;
+  background: #ccc;
+  align-items: center;
+  flex-flow: row;
+  padding: 10px;
+}
+.basic-detail .variant > div > div:nth-child(2) .cards .img img {
+  width: 100%;
+  padding-right: 10px;
+}
+.basic-detail .variant > div > div:nth-child(2) .cards .desc p {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
 .basic-detail .variant > div > div:nth-child(3) p {
   font-size: 14px;
   margin: 10px 0px;
@@ -189,7 +210,7 @@
   font-weight: 300;
 }
 .basic-detail .variant > div > div:nth-child(7) {
-  margin: 10px 0px;
+  margin-bottom: 10px;
 }
 .basic-detail .variant > div > div:nth-child(7) .p_shortdetail {
   background: #cccccc5c;
@@ -208,15 +229,115 @@
 .basic-detail .variant > div > div:nth-child(7) .p_shortdetail a {
   color: var(--primary-color);
 }
-.basic-detail .variant > div > div:nth-child(8) {
+/* .basic-detail .variant > div > div:nth-child(8) {
+  margin: 10px 0px;
+} */
+.basic-detail .variant > div > div:nth-child(8) .related_p_title {
+  border-bottom: 2px solid #aaa;
+  border-bottom-style: dashed;
+  padding: 10px 0;
+}
+.basic-detail .variant > div > div:nth-child(9) .accordion .accordion-item {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
   margin: 10px 0px;
 }
-.basic-detail .variant > div > div:nth-child(8) .related_p_title {
-  border-bottom: 3px solid #999;
-  padding: 10px 0px;
+.basic-detail
+  .variant
+  > div
+  > div:nth-child(9)
+  .accordion
+  .accordion-item
+  .card-body
+  p {
+  border-top: 2px solid #ccc;
+  border-top-style: dashed;
+  margin: 0;
+  padding: 10px 0px 0px 0px;
+}
+.basic-detail .variant > div > div:nth-child(9) .accordion .accordion-item h6 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px 10px;
+}
+.basic-detail
+  .variant
+  > div
+  > div:nth-child(9)
+  .accordion
+  .accordion-item
+  h6
+  a {
+  color: #000;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.basic-detail
+  .variant
+  > div
+  > div:nth-child(9)
+  .accordion
+  .accordion-item
+  h6
+  a
+  i:nth-child(1) {
+  padding: 0 2px;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  grid-gap: 5px;
+  color: #555;
+}
+.basic-detail
+  .variant
+  > div
+  > div:nth-child(9)
+  .accordion
+  .accordion-item
+  h6
+  a:not(.collapsed)i:nth-child(2) {
+  display: block;
+  font-size: 20px;
+}
+.basic-detail
+  .variant
+  > div
+  > div:nth-child(9)
+  .accordion
+  .accordion-item
+  h6
+  a:not(.collapsed)i:nth-child(3) {
+  display: none;
+}
+.basic-detail
+  .variant
+  > div
+  > div:nth-child(9)
+  .accordion
+  .accordion-item
+  h6
+  a
+  i:nth-child(2) {
+  display: none;
+}
+.basic-detail
+  .variant
+  > div
+  > div:nth-child(9)
+  .accordion
+  .accordion-item
+  h6
+  a
+  i:nth-child(3) {
+  display: block;
+  color: #555;
+  font-size: 20px;
 }
 .basic-detail .variant > div > div:nth-child(10) {
-  padding: 10px 0px;
+  padding: 10px;
 }
 .basic-detail .variant > div > div:nth-child(10) .buttons {
   display: flex;
@@ -226,26 +347,27 @@
 .basic-detail .variant > div > div:nth-child(10) .buttons button:nth-child(3) {
   border: 1px solid #ffb436;
   border-radius: 25px;
-  text-transform: uppercase;
-  box-shadow: inset 0px 0px 15px #cccccc94;
-  font-weight: 500;
+  text-transform: capitalize;
+  box-shadow: inset 0 0 15px #cccccc94;
   transition: box-shadow 0.5s ease-in-out;
-  /* transition: ; */
+  font-size: 16px;
+  padding: 10px 25px;
 }
 .basic-detail .variant > div > div:nth-child(10) .buttons button:nth-child(2) {
   border: 1px solid #ffb436;
   border-radius: 25px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #fff;
-  /* box-shadow: 1px 4px 10px #ccc; */
   background: radial-gradient(
     circle,
     rgba(133, 23, 83, 1) 0%,
     rgba(67, 12, 42, 1) 100%
   );
-  font-weight: 500;
+  /* font-weight: 500; */
   transition: transform 0.5s;
   transition: box-shadow 0.5s;
+  font-size: 16px;
+  padding: 10px 25px;
 }
 .basic-detail
   .variant
@@ -269,35 +391,152 @@
   transform: translateY(-5px);
   transition: transform 0.5s, box-shadow 0.5s ease-in-out;
 }
-.basic-detail .variant > div > div:nth-child(9) .accordion .accordion-item {
-  border-bottom: 3px solid #aaa;
+.services {
+  margin: 25px 0px;
 }
-.basic-detail .variant > div > div:nth-child(9) .accordion .accordion-item h6 {
+.services > div > div {
+  border-right: 2px solid #aaaa;
+}
+.services > div > div:nth-last-child(-n + 1) {
+  border-right: 0;
+}
+.services .card {
+  display: flex;
+  border: 0;
+  align-items: center;
+  flex-flow: row;
+  padding: 10px;
+}
+.services .card .img img {
+  width: 100%;
+  padding-right: 10px;
+}
+.services .card .desc p {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.product-detail {
+  margin: 10px 0px;
+}
+.product-detail .detail-table {
+  padding: 25px;
+  background: #eee;
+  text-transform: capitalize;
+}
+.product-detail .detail-table table {
+  width: 100%;
+}
+.product-detail .detail-table table tbody {
+  display: inline;
+}
+.product-detail .detail-table table tbody tr {
+  display: inline-grid;
+  width: 100%;
+  margin: 5px 0px;
+}
+.product-detail .detail-table table tbody tr th {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 2px solid var(--primary-bg);
+  margin: 0px 0px 5px 0px;
+  font-weight: 500;
+  font-size: 17px;
+}
+.product-detail .detail-table table tbody tr td {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  font-weight: 300;
+  font-size: 15px;
 }
-.basic-detail
-  .variant
-  > div
-  > div:nth-child(9)
-  .accordion
-  .accordion-item
-  h6
-  a {
-  color: #000;
+.product-detail .detail-table table tbody tr td:nth-last-child(-n + 1) {
+  font-weight: 400;
+  border-bottom: 2px solid #ccc;
+  padding: 4px 0px;
+}
+.product-detail .detail-table table p {
+  margin: 10px 5px;
+  font-size: 14px;
+}
+.product-detail .detail-table table p span {
+  color: var(--primary-bg);
+  font-weight: 500;
+}
+.product-detail .query {
+  padding: 25px;
+  background: #eee;
   text-transform: capitalize;
-  position: relative;
 }
-.basic-detail.variant
-  > div
-  > div:nth-child(9)
-  .accordion
-  .accordion-item
-  h6
-  a::after {
-  content: "&#xf067;";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.product-detail .query .promise {
+  border-bottom: 2px solid var(--primary-color);
+  border-bottom-style: dashed;
+}
+.product-detail .query .promise .card {
+  display: flex;
+  border: 0;
+  align-items: center;
+  flex-flow: row;
+  background: transparent;
+  padding: 10px;
+  margin: 10px 0px;
+}
+.product-detail .query .promise .card .img img {
+  width: 90%;
+  padding-right: 10px;
+}
+.product-detail .query .promise .card .desc p {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.product-detail .query form label {
+  font-size: 16px;
+  font-weight: 500;
+}
+.product-detail .query form .form-group {
+  padding: 10px 5px;
+  display: flex;
+  grid-gap: 10px;
+  text-transform: capitalize;
+}
+.product-detail .query form .form-group input {
+  border: 0;
+  border-bottom: 1px solid var(--primary-color);
+  background: transparent;
+  width: 100%;
+  padding: 0px 3px;
+  outline: none;
+}
+.product-detail .query form .submit button {
+  border: 1px solid #ffb436;
+  border-radius: 25px;
+  text-transform: capitalize;
+  color: #fff;
+  background: radial-gradient(
+    circle,
+    rgba(133, 23, 83, 1) 0%,
+    rgba(67, 12, 42, 1) 100%
+  );
+  width: 100%;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.product-detail .gurantee {
+  padding: 25px 0px;
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+}
+.product-detail .gurantee h6 {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+}
+.product-detail .gurantee p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
 }

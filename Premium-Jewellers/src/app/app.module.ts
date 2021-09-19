@@ -11,6 +11,7 @@ import { EngagementComponent } from './engagement/engagement.component';
 import { WatchesComponent } from './watches/watches.component';
 import { HouseComponent } from './house/house.component';
 import { NgModule} from '@angular/core';
+import { UserModule } from './user/user.module';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { NgModule} from '@angular/core';
     BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
+    UserModule
   ],
   providers: [],
   bootstrap: [AppComponent],

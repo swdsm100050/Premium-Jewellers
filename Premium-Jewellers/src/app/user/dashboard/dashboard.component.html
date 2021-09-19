@@ -1,0 +1,240 @@
+<section class="banner">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../../../assets/user/dashboard/banner2.png" class="d-block w-100 h-80" alt="..." />
+                <div class="carousel-caption d-none d-md-block text-dark">
+                    <div class="desc">
+                        <h2 class="text-uppercase">browse from latest collections!</h2>
+                        <button class="btn trans-btn text-uppercase my-2">shop now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../../../assets/user/dashboard/banner1.png" class="d-block w-100 h-80" alt="..." />
+                <div class="carousel-caption d-none d-md-block text-light">
+                    <div class="desc">
+                        <h2 class="text-uppercase">browse from latest collections!</h2>
+                        <button class="btn trans-btn text-uppercase my-2 text-white">shop now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../../../assets/user/dashboard/banner3.png" class="d-block w-100 h-80" alt="..." />
+                <div class="carousel-caption d-none d-md-block text-light">
+                    <div class="desc">
+                        <h2 class="text-uppercase">browse from latest collections!</h2>
+                        <button class="btn trans-btn text-uppercase my-2 text-white">shop now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+<section class="advantages">
+    <div class="container">
+        <div class="heading">
+            <div class="title">
+                <h2 class="mx-auto text-capitalize">premium jewellers advantages</h2>
+                <p class="text-capitalize text-center">8 reasons to shop with us!</p>
+            </div>
+        </div>
+        <owl-carousel-o [options]="customOptions">
+            <ng-container *ngFor="let slide of slides">
+                <ng-template carouselSlide>
+                    <div class="card p-4">
+                        <div class="img">
+                            <img [src]="slide.svg_url" alt="">
+                        </div>
+                        <div class="title">
+                            <p>{{slide.title}}</p>
+                        </div>
+                    </div>
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+    </div>
+</section>
+<section class="category">
+    <div class="container">
+        <div class="box">
+            <div class="row">
+                <div *ngFor="let card of cards" [class]="card.col">
+                    <div class="card">
+                        <div class="img">
+                            <img [src]="card.img" alt="">
+                            <div class="brand">
+                                <h6 class="text-capitalize">{{card.title}}</h6>
+                                <img [src]="card.brand_img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="products">
+    <div class="container">
+        <div class="heading">
+            <div class="title">
+                <h5 class="text-capitalize">necklaces-earings-bracelet-pendants</h5>
+            </div>
+        </div>
+        <owl-carousel-o [options]="customOptions">
+            <ng-container *ngFor="let slide of products">
+                <ng-template carouselSlide>
+                    <div class="card">
+                        <div class="img">
+                            <img [src]="slide.svg_url" alt="">
+                            <div class="add-offer">
+                                <span><i class="bi bi-star-fill"></i> bestseller</span>
+                                <span><i class="bi bi-heart"></i></span>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <div class="title">{{slide.title}}</div>
+                            <div class="price">
+                                <span class="mrp">₹{{slide.mrp}}</span>
+                                <span class="discount">save ₹{{slide.discount}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+    </div>
+</section>
+<section class="products">
+    <div class="container">
+        <div class="heading">
+            <div class="title">
+                <h5 class="text-capitalize">gold-diamonds-silver-coins</h5>
+            </div>
+        </div>
+        <owl-carousel-o [options]="customOptions">
+            <ng-container *ngFor="let slide of products">
+                <ng-template carouselSlide>
+                    <div class="card">
+                        <div class="img">
+                            <img [src]="slide.svg_url" alt="">
+                            <div class="add-offer">
+                                <span><i class="bi bi-star-fill"></i> bestseller</span>
+                                <span><i class="bi bi-heart"></i></span>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <div class="title">{{slide.title}}</div>
+                            <div class="price">
+                                <span class="mrp">₹{{slide.mrp}}</span>
+                                <span class="discount">save ₹{{slide.discount}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+    </div>
+</section>
+<section class="offer">
+    <div class="container">
+        <div class="box">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="img">
+                        <img class="rounded" src="../../../assets/user/dashboard/offer1.png" alt="">
+                        <p><span>shop now</span></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="img">
+                        <img class="rounded" src="../../../assets/user/dashboard/offer2.png" alt="">
+                        <p><span>shop now</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="clients">
+    <div class="container">
+        <div class="heading">
+            <div class="title m-0">
+                <h3 class="m-auto mb-3 text-capitalize">our clients say</h3>
+                <p class="text-center text-capitalize">visit our shop to see amazing creations from our designers</p>
+            </div>
+        </div>
+        <div class="col-md-8 m-auto">
+            <owl-carousel-o [options]="client">
+                <ng-template carouselSlide *ngFor="let cust of clients">
+                    <div class="box">
+                        <div class="col-md-10 mx-auto text-center">
+                            <div class="content">
+                                <div class="img">
+                                    <img src="../../../assets/user/dashboard/product.svg" alt="">
+                                </div>
+                                <div class="desc">
+                                    <p> {{cust.text}} </p>
+                                    <div class="user">
+                                        <h6>{{cust.name}}</h6>
+                                        <i>{{cust.position}}</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</section>
+<section class="gallery">
+    <div class="container">
+        <div class="heading">
+            <div class="title m-0">
+                <h3 class="mb-4 text-capitalize">shop our instagram</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="row g-0">
+                <div class="col-md-5 p-0">
+                    <img class="w-auto" src="../../../assets/user/dashboard/gallery_img1.png" alt="">
+                </div>
+                <div class="col-md-7 p-0">
+                    <div class="row g-0">
+                        <div class="col-md-4 p-0"><img src="../../../assets/user/dashboard/gallery_img2.png" alt="">
+                        </div>
+                        <div class="col-md-4 p-0"><img src="../../../assets/user/dashboard/gallery_img3.png" alt="">
+                        </div>
+                        <div class="col-md-4 p-0"><img src="../../../assets/user/dashboard/gallery_img4.png" alt="">
+                        </div>
+                        <div class="col-md-4 p-0"><img src="../../../assets/user/dashboard/gallery_img5.png" alt="">
+                        </div>
+                        <div class="col-md-4 p-0"><img src="../../../assets/user/dashboard/gallery_img6.png" alt="">
+                        </div>
+                        <div class="col-md-4 p-0"><img src="../../../assets/user/dashboard/gallery_img7.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

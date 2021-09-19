@@ -1,0 +1,298 @@
+<div class="container">
+    <section class="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+    </section>
+    <section class="basic-detail">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="imgs">
+                    <div class="main-img">
+                        <img class="rounded" style="width: -webkit-fill-available;"
+                            src="../../../assets/user/dashboard/category33.png" alt="">
+                    </div>
+                    <div class="slide-img">
+                        <owl-carousel-o [options]="customOptions">
+                            <ng-container *ngFor="let slide of slides">
+                                <ng-template carouselSlide>
+                                    <div class="img" style="margin: 10px 5px;">
+                                        <img class="rounded img-thumbnail" [src]="slide.imgUrl" alt="">
+                                    </div>
+                                </ng-template>
+                            </ng-container>
+                        </owl-carousel-o>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="product_name">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>pauletta diamond ring</h4>
+                            <p><span>you save</span>₹4000(10%)</p>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center justify-content-end">
+                            <div class="share">
+                                <i class="bi bi-stack"></i>
+                                <i class="bi bi-share-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="discounted_price">₹140000</div>
+                    <div class="mrp">₹140000</div>
+                </div>
+                <div class="variant">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a class="text-capitalize" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                hide price breakup <i class="bi bi-caret-down-fill"></i>
+                            </a>
+                            <div class="feature">
+                                <span>metal grade:24k</span>
+                                <span><i class="bi bi-gem"></i>diamond quality:ij-si</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body my-3">
+                                    <div class="row">
+                                        <div *ngFor="let service of price_variant" class="col-lg-3">
+                                            <div class="cards rounded">
+                                                <div class="img">
+                                                    <img [src]="service.img" alt="">
+                                                </div>
+                                                <div class="desc">
+                                                    <p>{{service.title}}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <p>schedule your free <span>trial at home</span></p>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="">your pincode</label>
+                                    <div class="input-group">
+                                        <input type="text" name="" id="" placeholder="400095">
+                                        <a>update</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="">select size</label>
+                                    <select>
+                                        <option selected>1</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <span class="text-muted">
+                                        not sure about ring size?
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <span>delivery by: <span>mon, nov 2 for pincode 400095</span></span>
+                                </div>
+                                <div class="col-md-6">
+                                    <span>(*indian ring size)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <a href="">view all designs in stores near you </a>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="p_shortdetail">
+                                <p>need it soon? <span class="text-muted">these product are available</span></p>
+                                <span>diamond ring set in 14k yellow gold (5.5grams) with diamonds (0.34 Ct,Ij-SI)
+                                    certified by igi </span>
+                                <a href="">see more product details</a>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="related_p_title">
+                                <p class="m-0">PreSet solitaire ring in 18k white gold (1.2gram) and solitaire (0.3 Ct)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h6 class="" id="flush-headingOne">
+                                        <a href="" class=" collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                            aria-controls="flush-collapseOne">
+                                            <i class="bi bi-arrow-right-circle-fill">Accordion Item #1</i>
+                                            <i class="bi bi-plus"></i>
+                                            <i class="bi bi-dash"></i>
+                                        </a>
+                                    </h6>
+                                    <div id="flush-collapseOne" class=" collapse" aria-labelledby="flush-headingOne"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="card-body">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad earum
+                                                accusantium maiores quibusdam culpa facere accusamus eum ea veritatis
+                                                autem deleniti magnam voluptas ex molestiae, iste iusto aliquid ab
+                                                error!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h6 class="" id="flush-headingTwo">
+                                        <a href="" class=" collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                            aria-controls="flush-collapseTwo">
+                                            <i class="bi bi-arrow-right-circle-fill">Accordion Item #2</i>
+                                            <i class="bi bi-plus"></i>
+                                            <i class="bi bi-dash"></i>
+                                        </a>
+                                    </h6>
+                                    <div id="flush-collapseTwo" class=" collapse" aria-labelledby="flush-headingTwo"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="card-body">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad earum
+                                                accusantium maiores quibusdam culpa facere accusamus eum ea veritatis
+                                                autem deleniti magnam voluptas ex molestiae, iste iusto aliquid ab
+                                                error!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="buttons">
+                                <button class="btn">but now</button>
+                                <button class="btn">add to cart</button>
+                                <button class="btn">book appointment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="row">
+            <div *ngFor="let service of services" class="col-lg-2">
+                <div class="card">
+                    <div class="img">
+                        <img [src]="service.img" alt="">
+                    </div>
+                    <div class="desc">
+                        <p>{{service.title}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-detail">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="detail-table">
+                    <table class="">
+                        <tbody>
+                            <tr>
+                                <th><span>product details</span></th>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                            </tr>
+                            <tr>
+                                <th>product details</th>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                            </tr>
+                            <tr>
+                                <th>product details</th>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                                <td><span>style</span> <span>text</span></td>
+                            </tr>
+                        </tbody>
+                        <p><span>note</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
+                            recusandae, </p>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="query">
+                    <div class="promise">
+                        <h5>premium jewellers promise</h5>
+                        <div class="row">
+                            <div *ngFor="let service of services" class="col-lg-4">
+                                <div class="card">
+                                    <div class="img">
+                                        <img [src]="service.img" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <p>{{service.title}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="">
+                        <label for=""></label>
+                        <div class="form-group">
+                            <span>name:</span>
+                            <input type="text" name="" id="" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group">
+                            <span>email:</span>
+                            <input type="email" name="" id="" placeholder="Enter Email">
+                        </div>
+                        <div class="form-group">
+                            <span>phone:</span>
+                            <input type="tel" name="" id="" placeholder="Enter Phone No.">
+                        </div>
+                        <div class="form-group">
+                            <span>Query:</span>
+                            <input type="text" name="" id="" placeholder="Your Message">
+                        </div>
+                        <div class="submit">
+                            <button type="submit" class="btn">submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="gurantee">
+                    <div class="col-md-8 mx-auto">
+                        <h6>authenticate your jewellery</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum neque soluta facilis in
+                            impedit repudiandae aperiam sed quae repellendus beatae! Neque nulla dicta sint placeat quae
+                            at quis provident recusandae?<a href="">www.home.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="story">
+
+        <div class="row">
+            <div class="col-md-5">
+
+            </div>
+            <div class="col-md-7"></div>
+        </div>
+    </section>
+</div>

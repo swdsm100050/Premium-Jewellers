@@ -287,12 +287,101 @@
         </div>
     </section>
     <section class="story">
-
-        <div class="row">
-            <div class="col-md-5">
-
+        <div class="heading">
+            <div class="title">
+                <h2 class="mx-auto text-capitalize">the product story</h2>
             </div>
-            <div class="col-md-7"></div>
+        </div>
+        <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-md-4">
+                <div class="img">
+                    <img src="../../../assets/user/product-detail/ring.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="box">
+                    <div class="topic" *ngFor="let topic of story">
+                        <h5> {{topic.title}} </h5>
+                        <p> {{topic.text}} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="near-store">
+        <div class="heading">
+            <div class="title">
+                <h2 class="mx-auto text-capitalize">find in store near you</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15072.511019746411!2d72.8498903!3d19.1896216!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xecc53baba8b90393!2sDigital%20Solution%20Media!5e0!3m2!1sen!2sin!4v1632118931366!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="col-lg-8 m-auto">
+                    <div class="find-store">
+                        <div class="img">
+                            <img src="../../../assets/user/product-detail/location.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h6>find in store near you</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, incidunt consectetur
+                                reprehenderit, recusandae cupiditate asperiores unde nam quidem dolor nisi atque culpa?
+                                Maiores nobis id aperiam nesciunt voluptate recusandae nam?</p>
+                            <a href="">locate me</a>
+                        </div>
+                        <div class="input-grp">
+                            <i class="bi bi-geo-alt"></i>
+                            <input type="text" name="" id="" placeholder="Enter Pincode">
+                        </div>
+                        <div class="b-search">
+                            <button class="btn">find store near you</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="related"></section>
+    <section class="rating-review">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="total-rating">
+                    <div class="col-md-8 m-auto">
+                        <div class="heading">
+                            <div class="title">
+                                <h4 class="mx-auto text-capitalize">rating</h4>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h1>0/5</h1>
+                            <div class="stars">
+                                <i *ngFor="let s of star" [class]="s"></i>
+                            </div>
+                            <div class="review-count">
+                                <p>0 reviews</p>
+                            </div>
+                            <div class="rating-star">
+                                <div class="by-star" *ngFor="let star of stars">
+                                    <div class="star">
+                                        <span>{{star.rating}}</span>
+                                        <i *ngFor="let no of star.rating_star" [class]="no.class"></i>
+                                    </div>
+                                    <div class="count"><span>{{star.count}}</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="write-review"></div>
+            </div>
         </div>
     </section>
 </div>

@@ -33,6 +33,19 @@ export class ProductDetailComponent implements OnInit {
     {"title":"excellent quality","img":"../../../assets/home/icon1.png"},
     {"title":"excellent quality","img":"../../../assets/home/icon1.png"},
   ]
+  story=[
+    {"title":"the inspiration","text":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum quos recusandae praesentium, nesciunt odio quaerat soluta veniam voluptate sit possimus cupiditate quas aut. Tempora fuga sunt eum consequatur eos."},
+    {"title":"the inspiration","text":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum quos recusandae praesentium, nesciunt odio quaerat soluta veniam voluptate sit possimus cupiditate quas aut. Tempora fuga sunt eum consequatur eos."},
+    {"title":"the inspiration","text":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum quos recusandae praesentium, nesciunt odio quaerat soluta veniam voluptate sit possimus cupiditate quas aut. Tempora fuga sunt eum consequatur eos."},
+  ]
+  stars=[
+    {"rating":"5","rating_star":[{"class":"fa fa-star"},{"class":"fa fa-star"},{"class":"fa fa-star"},{"class":"fa fa-star"},{"class":"fa fa-star-half-o"},],"count":"(12)"},
+    {"rating":"4","rating_star":[{"class":"fa fa-star"},{"class":"fa fa-star"},{"class":"fa fa-star"},{"class":"fa fa-star"},{"class":"fa fa-star-o"},],"count":"(12)"},
+    {"rating":"3","rating_star":[{"class":"fa fa-star"},{"class":"fa fa-star"},{"class":"fa fa-star"},{"class":"fa fa-star-o"},{"class":"fa fa-star-o"},],"count":"(12)"},
+    {"rating":"2","rating_star":[{"class":"fa fa-star"},{"class":"fa fa-star"},{"class":"fa fa-star-o"},{"class":"fa fa-star-o"},{"class":"fa fa-star-o"},],"count":"(12)"},
+    {"rating":"1","rating_star":[{"class":"fa fa-star"},{"class":"fa fa-star-o"},{"class":"fa fa-star-o"},{"class":"fa fa-star-o"},{"class":"fa fa-star-o"},],"count":"(12)"},
+  ]
+  star=["fa fa-star-o","fa fa-star-o","fa fa-star-o","fa fa-star-o","fa fa-star-o",]
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,

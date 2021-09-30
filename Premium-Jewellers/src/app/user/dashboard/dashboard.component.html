@@ -54,11 +54,11 @@
         <div class="heading">
             <div class="title">
                 <h2 class="mx-auto text-capitalize">premium jewellers advantages</h2>
-                <p class="text-capitalize text-center">8 reasons to shop with us!</p>
+                <p class="text-capitalize text-center">8 reasons to shop with us! </p>
             </div>
         </div>
         <owl-carousel-o [options]="customOptions">
-            <ng-container *ngFor="let slide of slides">
+            <ng-container *ngFor="let slide of features">
                 <ng-template carouselSlide>
                     <div class="card p-4">
                         <div class="img">
@@ -100,24 +100,9 @@
             </div>
         </div>
         <owl-carousel-o [options]="customOptions">
-            <ng-container *ngFor="let slide of products">
+            <ng-container *ngFor="let product of products">
                 <ng-template carouselSlide>
-                    <div class="card">
-                        <div class="img">
-                            <img [src]="slide.svg_url" alt="">
-                            <div class="add-offer">
-                                <span><i class="bi bi-star-fill"></i> bestseller</span>
-                                <span><i class="bi bi-heart"></i></span>
-                            </div>
-                        </div>
-                        <div class="desc">
-                            <div class="title">{{slide.title}}</div>
-                            <div class="price">
-                                <span class="mrp">₹{{slide.mrp}}</span>
-                                <span class="discount">save ₹{{slide.discount}}</span>
-                            </div>
-                        </div>
-                    </div>
+                    <product-card [product]="product"></product-card>
                 </ng-template>
             </ng-container>
         </owl-carousel-o>
@@ -131,24 +116,9 @@
             </div>
         </div>
         <owl-carousel-o [options]="customOptions">
-            <ng-container *ngFor="let slide of products">
+            <ng-container *ngFor="let product of products">
                 <ng-template carouselSlide>
-                    <div class="card">
-                        <div class="img">
-                            <img [src]="slide.svg_url" alt="">
-                            <div class="add-offer">
-                                <span><i class="bi bi-star-fill"></i> bestseller</span>
-                                <span><i class="bi bi-heart"></i></span>
-                            </div>
-                        </div>
-                        <div class="desc">
-                            <div class="title">{{slide.title}}</div>
-                            <div class="price">
-                                <span class="mrp">₹{{slide.mrp}}</span>
-                                <span class="discount">save ₹{{slide.discount}}</span>
-                            </div>
-                        </div>
-                    </div>
+                    <product-card [product]="product"></product-card>
                 </ng-template>
             </ng-container>
         </owl-carousel-o>

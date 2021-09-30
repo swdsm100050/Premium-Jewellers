@@ -42,47 +42,9 @@
         </div>
     </section>
     <section class="list_product">
-
         <div class="box">
             <div class="row">
-                <ng-container *ngFor="let slide of products">
-                    <div *ngIf="slide.isProduct" [class]="slide.col_p">
-                        <div class="card">
-                            <div class="img">
-                                <img [src]="slide.p_imgUrl1" alt="">
-                                <img [src]="slide.p_imgUrl2" alt="">
-                            </div>
-                            <div class="desc">
-                                <div class="title">{{slide.title}}</div>
-                                <div class="price">
-                                    <span class="mrp">₹{{slide.mrp}}</span>
-                                    <span class="discount">save ₹{{slide.discount}}</span>
-                                </div>
-                            </div>
-                            <div class="add-offer">
-                                <span><i class="bi bi-star-fill"></i> bestseller</span>
-                                <span><i class="bi bi-heart"></i></span>
-                            </div>
-                            <div class="on_hover">
-                                <div>
-                                    <a href=""><i class="bi bi-stack"></i></a>
-                                    <a href=""><i class="bi bi-stack"></i></a>
-                                    <a href=""><i class="bi bi-stack"></i></a>
-                                </div>
-                                <div>
-                                    <a href="">view details <i class="bi bi-chevron-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div *ngIf="slide.isOffer" [class]="slide.col_p">
-                        <div class="img">
-                            <a href="">
-                                <img [src]="slide.offer_imgUrl1" class="rounded" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </ng-container>
+                <product-card *ngFor="let product of products" [product]="product"></product-card>
             </div>
         </div>
     </section>

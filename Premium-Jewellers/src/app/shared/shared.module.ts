@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { ProductCardComponent } from './components/product-card/product-card.component';
 
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ProductCardComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { AppRoutingModule } from '../app-routing.module';
   ],
   exports:[
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    ProductCardComponent
   ]
 })
 export class SharedModule { }

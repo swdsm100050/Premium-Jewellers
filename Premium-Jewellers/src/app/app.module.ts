@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { HttpClientModule } from '@angular/common/http'
+import { NgModule} from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,7 +12,6 @@ import { JewelleryCollectionComponent } from './jewellery-collection/jewellery-c
 import { EngagementComponent } from './engagement/engagement.component';
 import { WatchesComponent } from './watches/watches.component';
 import { HouseComponent } from './house/house.component';
-import { NgModule} from '@angular/core';
 import { UserModule } from './user/user.module';
 
 @NgModule({
@@ -28,7 +29,8 @@ import { UserModule } from './user/user.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
-    UserModule
+    UserModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { AppRoutingModule } from '../app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+
 import { UserComponent } from './user.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { AppRoutingModule } from '../app-routing.module';
-import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -19,7 +22,10 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
   imports: [
     CommonModule,
     AppRoutingModule,
-    CarouselModule
-  ]
+    CarouselModule,
+    HttpClientModule,
+    SharedModule
+  ],
+  providers: [],
 })
 export class UserModule { }

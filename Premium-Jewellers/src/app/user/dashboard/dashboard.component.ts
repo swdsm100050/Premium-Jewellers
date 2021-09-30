@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
@@ -9,38 +10,29 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private http: HttpClient){}
+  features:any=[]
+  products:any=[];
+  cards:any=[]
+  private url="../../assets/data/user/carousal-product.json";
+  async getProducts(){
+    let response = await this.http.get<any>(this.url).toPromise()
+    this.products=response
+    console.log(response)
   }
-
-  slides=[
-    {"svg_url":"../../../assets/user/dashboard/feature1.svg","title":"excellent jewellery quility"},
-    {"svg_url":"../../../assets/user/dashboard/feature2.svg","title":"excellent jewellery quility"},
-    {"svg_url":"../../../assets/user/dashboard/feature3.svg","title":"excellent jewellery quility"},
-    {"svg_url":"../../../assets/user/dashboard/feature4.svg","title":"excellent jewellery quility"},
-    {"svg_url":"../../../assets/user/dashboard/feature5.svg","title":"excellent jewellery quility"},
-    {"svg_url":"../../../assets/user/dashboard/feature6.svg","title":"excellent jewellery quility"},
-    {"svg_url":"../../../assets/user/dashboard/feature7.svg","title":"excellent jewellery quility"},
-    {"svg_url":"../../../assets/user/dashboard/feature8.svg","title":"excellent jewellery quility"},
-  ]
-  cards=[
-    {"title":"engagement","col":"col-md-4","img":"../../../assets/user/dashboard/category1.png","brand_img":"../../../assets/user/dashboard/category-icon1.svg"},
-    {"title":"engagement","col":"col-md-8","img":"../../../assets/user/dashboard/category2.png","brand_img":"../../../assets/user/dashboard/category-icon2.svg"},
-    {"title":"engagement","col":"col-md-4","img":"../../../assets/user/dashboard/category3.png","brand_img":"../../../assets/user/dashboard/category-icon3.svg"},
-    {"title":"engagement","col":"col-md-4","img":"../../../assets/user/dashboard/category4.png","brand_img":"../../../assets/user/dashboard/category-icon4.svg"},
-    {"title":"engagement","col":"col-md-4","img":"../../../assets/user/dashboard/category5.png","brand_img":"../../../assets/user/dashboard/category-icon5.svg"},
-  ]
-  products=[
-    {"svg_url":"../../../assets/user/dashboard/category5.png","title":"pauletta glo diamond ring","mrp":"140000","discount":"4000"},
-    {"svg_url":"../../../assets/user/dashboard/category5.png","title":"pauletta glo diamond ring","mrp":"140000","discount":"4000"},
-    {"svg_url":"../../../assets/user/dashboard/category5.png","title":"pauletta glo diamond ring","mrp":"140000","discount":"4000"},
-    {"svg_url":"../../../assets/user/dashboard/category5.png","title":"pauletta glo diamond ring","mrp":"140000","discount":"4000"},
-    {"svg_url":"../../../assets/user/dashboard/category5.png","title":"pauletta glo diamond ring","mrp":"140000","discount":"4000"},
-    {"svg_url":"../../../assets/user/dashboard/category5.png","title":"pauletta glo diamond ring","mrp":"140000","discount":"4000"},
-    {"svg_url":"../../../assets/user/dashboard/category5.png","title":"pauletta glo diamond ring","mrp":"140000","discount":"4000"},
-    {"svg_url":"../../../assets/user/dashboard/category5.png","title":"pauletta glo diamond ring","mrp":"140000","discount":"4000"},
-  ]
+  async getFeatures(){
+    let response=await this.http.get<any>("../../assets/data/user/features.json").toPromise()
+    this.features=response
+  }
+  async getCards(){
+    let response=await this.http.get<any>("../../assets/data/user/cards.json").toPromise()
+    this.cards=response
+  }
+  ngOnInit(){
+    this.getProducts()
+    this.getFeatures()
+    this.getCards()
+  }
   customers=[
     {"comment":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consectetur perspiciatis unde corrupti aut alias maxime at molestiae. Nulla voluptatum vel aut ipsa earum eveniet vero repellendus esse minus alias.","name":"altaf shaikh"},
     {"comment":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consectetur perspiciatis unde corrupti aut alias maxime at molestiae. Nulla voluptatum vel aut ipsa earum eveniet vero repellendus esse minus alias.","name":"makdoom shaikh"},
@@ -67,13 +59,13 @@ export class DashboardComponent implements OnInit {
       0: {
         items: 1
       },
-      400: {
+      350: {
         items: 2
       },
-      740: {
+      700: {
         items: 3
       },
-      940: {
+      900: {
         items: 4
       }
     },

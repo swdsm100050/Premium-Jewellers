@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
@@ -8,29 +9,24 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class JewelleryCollectionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
+  loved:any=[]
+  async getLoved(){
+    let response=await this.http.get<any>("../assets/data/jewellery-collection/loved.json").toPromise()
+    this.loved=response
+  }
+  popular:any=[]
+  async getPopular(){
+    let response=await this.http.get<any>("../assets/data/jewellery-collection/popular.json").toPromise()
+    this.popular=response
+  }
+
 
   ngOnInit(): void {
+    this.getLoved()
+    this.getPopular()
   }
-  loved=[
-    {"imgUrl":"../../assets/jewellery-collection/loved1.png","title":"forever love collection","shortDesc":"why wait for the perfect moment?"},
-    {"imgUrl":"../../assets/jewellery-collection/loved2.png","title":"switch","shortDesc":"fashion for the fickle minded!"},
-    {"imgUrl":"../../assets/jewellery-collection/loved3.png","title":"miracle plate collection","shortDesc":"seeing is believing."},
-  ]
-  popular=[
-    {"imgUrl":"../../assets/jewellery-collection/popular1.png","title":"forever love collection","shortDesc":"why wait for the perfect moment?"},
-    {"imgUrl":"../../assets/jewellery-collection/popular2.png","title":"switch","shortDesc":"fashion for the fickle minded!"},
-    {"imgUrl":"../../assets/jewellery-collection/popular3.png","title":"miracle plate collection","shortDesc":"seeing is believing."},
-    {"imgUrl":"../../assets/jewellery-collection/popular4.png","title":"forever love collection","shortDesc":"why wait for the perfect moment?"},
-    {"imgUrl":"../../assets/jewellery-collection/popular5.png","title":"switch","shortDesc":"fashion for the fickle minded!"},
-    {"imgUrl":"../../assets/jewellery-collection/popular6.png","title":"miracle plate collection","shortDesc":"seeing is believing."},
-    {"imgUrl":"../../assets/jewellery-collection/popular7.png","title":"forever love collection","shortDesc":"why wait for the perfect moment?"},
-    {"imgUrl":"../../assets/jewellery-collection/popular8.png","title":"switch","shortDesc":"fashion for the fickle minded!"},
-    {"imgUrl":"../../assets/jewellery-collection/popular9.png","title":"miracle plate collection","shortDesc":"seeing is believing."},
-    {"imgUrl":"../../assets/jewellery-collection/popular10.png","title":"forever love collection","shortDesc":"why wait for the perfect moment?"},
-    {"imgUrl":"../../assets/jewellery-collection/popular11.png","title":"switch","shortDesc":"fashion for the fickle minded!"},
-    {"imgUrl":"../../assets/jewellery-collection/popular12.png","title":"miracle plate collection","shortDesc":"seeing is believing."},
-  ]
+
   slides=[
     {"btn1":"ziva collection","btn2":"evil eye"},
     {"btn1":"ginni","btn2":"everlite"},

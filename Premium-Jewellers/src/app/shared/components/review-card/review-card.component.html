@@ -1,0 +1,51 @@
+<div class="product-review">
+    <div class="row">
+        <div class="col-md-12 d-flex justify-content-between align-items-center">
+            <div class="hero">
+                <img [src]="review.heroImg" alt="">
+                <p class="m-0">babita hemborn</p>
+            </div>
+            <div class="updated">
+                <div class="text-muted">
+                    <span>india on 26 oct 2020</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="star-title">
+                <div class="star">
+                    <i *ngFor="let s of pstar" [class]="s"></i>
+                </div>
+                <div class="title">
+                    <h6>an amazing , classy and decent</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, totam suscipit eos itaque aliquid
+                    voluptate cupiditate nam voluptates dolores! Repellendus consequatur nesciunt deserunt expedita
+                    animi nemo laudantium temporibus consectetur esse!</p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="p-img">
+                <div class="row">
+                    <div class="col-md-2"> <img [src]="review.pImg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="other-viewed">
+                <span class="text-muted">14 people found this helpful</span>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="btns">
+                <a href="" class="btn">helful</a>
+                <div class="vertical-line"></div>
+                <a href="" class="btn">report abuse</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -9,6 +9,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class ProductDetailComponent implements OnInit {
 
+
   constructor(private http:HttpClient) { }
   services:any=[]
   slides:any=[]
@@ -37,12 +38,19 @@ export class ProductDetailComponent implements OnInit {
     this.getStars()
   }
 
+  reviews=[
+    {"heroImg":"../../../assets/user/user.png","pImg":"../../../assets/user/product-detail/ring.jpg"},
+    {"heroImg":"../../../assets/user/user.png","pImg":"../../../assets/user/product-detail/ring.jpg"},
+    {"heroImg":"../../../assets/user/user.png","pImg":"../../../assets/user/product-detail/ring.jpg"},
+    {"heroImg":"../../../assets/user/user.png","pImg":"../../../assets/user/product-detail/ring.jpg"},
+  ]
   story=[
     {"title":"the inspiration","text":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum quos recusandae praesentium, nesciunt odio quaerat soluta veniam voluptate sit possimus cupiditate quas aut. Tempora fuga sunt eum consequatur eos."},
     {"title":"the inspiration","text":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum quos recusandae praesentium, nesciunt odio quaerat soluta veniam voluptate sit possimus cupiditate quas aut. Tempora fuga sunt eum consequatur eos."},
     {"title":"the inspiration","text":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum quos recusandae praesentium, nesciunt odio quaerat soluta veniam voluptate sit possimus cupiditate quas aut. Tempora fuga sunt eum consequatur eos."},
   ]
   star=["fa fa-star-o","fa fa-star-o","fa fa-star-o","fa fa-star-o","fa fa-star-o",]
+
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,

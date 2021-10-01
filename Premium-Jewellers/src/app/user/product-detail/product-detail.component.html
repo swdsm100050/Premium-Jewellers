@@ -50,8 +50,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <a class="text-capitalize" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                                aria-expanded="false" aria-controls="collapseExample">
-                                hide price breakup <i class="bi bi-caret-down-fill"></i>
+                                aria-expanded="false" aria-controls="collapseExample"> hide price breakup <i
+                                    class="bi bi-caret-down-fill"></i>
                             </a>
                             <div class="feature">
                                 <span>metal grade:24k</span>
@@ -96,9 +96,7 @@
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                     </select>
-                                    <span class="text-muted">
-                                        not sure about ring size?
-                                    </span>
+                                    <span class="text-muted"> not sure about ring size? </span>
                                 </div>
                             </div>
                         </div>
@@ -314,7 +312,7 @@
                 <h2 class="mx-auto text-capitalize">find in store near you</h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row my-5">
             <div class="col-lg-5">
                 <div class="map">
                     <iframe
@@ -350,9 +348,9 @@
     <section class="related"></section>
     <section class="rating-review">
         <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-5">
                 <div class="total-rating">
-                    <div class="col-md-8 m-auto">
+                    <div class="">
                         <div class="heading">
                             <div class="title">
                                 <h4 class="mx-auto text-capitalize">rating</h4>
@@ -379,8 +377,15 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5">
-                <div class="write-review"></div>
+            <div class="col-lg-7">
+                <div class="heading">
+                    <div class="title">
+                        <h4 class="mx-auto text-capitalize">reviews</h4>
+                    </div>
+                </div>
+                <div *ngFor="let review of reviews">
+                    <review-card [review]="review"></review-card>
+                </div>
             </div>
         </div>
     </section>

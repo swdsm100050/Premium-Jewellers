@@ -1,0 +1,58 @@
+.product-review .hero {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  grid-gap: 10px;
+  margin: 10px 0px;
+}
+.product-review .updated {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.product-review .hero img {
+  width: 40px;
+  background: #ccc;
+  padding: 5px;
+  border-radius: 50%;
+}
+.product-review .star-title {
+  display: flex;
+  grid-gap: 10px;
+  text-transform: capitalize;
+  align-items: baseline;
+  margin: 5px 0px;
+}
+.product-review .star-title .star i {
+  padding: 0px 2px;
+  color: #fa9901;
+  font-weight: 700;
+}
+.product-review .text p {
+  font-size: 14px;
+  margin: 0;
+}
+.product-review .p-img img {
+  width: -webkit-fill-available;
+}
+.product-review .other-viewed span {
+  font-size: 13px;
+}
+.product-review .btns {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  margin: 10px 0px;
+}
+.product-review .btns a:nth-child(1) {
+  border: 1px solid #ccc;
+  padding: 2px 25px;
+  box-shadow: 1px 3px 10px #cccccc8f;
+}
+.product-review .btns a:nth-child(2) {
+  padding: 00;
+}
+.product-review .btns .vertical-line {
+  border-left: 1px solid #ccc;
+  height: 28px;
+  margin: 0px 10px;
+}

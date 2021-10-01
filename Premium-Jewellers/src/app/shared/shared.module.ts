@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { ProductCardComponent } from './components/product-card/product-card.component';
+import { ReviewCardComponent } from './components/review-card/review-card.component';
 
 
 
@@ -11,7 +12,8 @@ import { ProductCardComponent } from './components/product-card/product-card.com
   declarations: [
     HeaderComponent,
     FooterComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    ReviewCardComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { ProductCardComponent } from './components/product-card/product-card.com
   exports:[
     FooterComponent,
     HeaderComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    ReviewCardComponent
   ]
 })
 export class SharedModule { }

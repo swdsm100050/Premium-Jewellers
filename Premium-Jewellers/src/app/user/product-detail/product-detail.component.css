@@ -443,9 +443,14 @@
   padding: 25px;
   background: #eee;
   text-transform: capitalize;
+  height: 100%;
 }
 .product-detail .detail-table table {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
 }
 .product-detail .detail-table table tbody {
   display: inline;
@@ -669,7 +674,7 @@
 }
 .rating-review .total-rating .box .stars i {
   padding: 0px 5px;
-  color: #fdd68d;
+  color: #fa9901;
   font-size: xx-large;
   font-weight: 700;
 }
@@ -691,10 +696,68 @@
 }
 .rating-review .total-rating .box .rating-star .by-star .star i {
   padding: 0px 5px;
-  color: #fdd68d;
+  color: #fa9901;
   font-weight: 700;
 }
 .rating-review .total-rating .box .rating-star .by-star .count span {
   font-size: 18px;
   color: #aaa;
+}
+.rating-review .product-review .hero {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  grid-gap: 10px;
+  margin: 10px 0px;
+}
+.rating-review .product-review .updated {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.rating-review .product-review .hero img {
+  width: 40px;
+  background: #ccc;
+  padding: 5px;
+  border-radius: 50%;
+}
+.rating-review .product-review .star-title {
+  display: flex;
+  grid-gap: 10px;
+  text-transform: capitalize;
+  align-items: baseline;
+  margin: 5px 0px;
+}
+.rating-review .product-review .star-title .star i {
+  padding: 0px 2px;
+  color: #fa9901;
+  font-weight: 700;
+}
+.rating-review .product-review .text p {
+  font-size: 14px;
+  margin: 0;
+}
+.rating-review .product-review .p-img img {
+  width: -webkit-fill-available;
+}
+.rating-review .product-review .other-viewed span {
+  font-size: 13px;
+}
+.rating-review .product-review .btns {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  margin: 10px 0px;
+}
+.rating-review .product-review .btns a:nth-child(1) {
+  border: 1px solid #ccc;
+  padding: 2px 25px;
+  box-shadow: 1px 3px 10px #cccccc8f;
+}
+.rating-review .product-review .btns a:nth-child(2) {
+  padding: 00;
+}
+.rating-review .product-review .btns .vertical-line {
+  border-left: 1px solid #ccc;
+  height: 28px;
+  margin: 0px 10px;
 }

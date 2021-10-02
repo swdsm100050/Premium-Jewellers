@@ -7,11 +7,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ReviewCardComponent implements OnInit {
 @Input() review:any;
-// @Input() pstar:any;
 pstar=["fa fa-star","fa fa-star","fa fa-star","fa fa-star","fa fa-star",]
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  public showAll: any = false;
+  triggerReadMore() {
+      this.showAll = !this.showAll;
+  }
 }

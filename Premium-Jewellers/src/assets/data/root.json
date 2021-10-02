@@ -1,0 +1,143 @@
+{
+    "collections": [
+        {
+            "imgUrl": "../../assets/home/collections1.jpg",
+            "title": "COLLECTION-1"
+        },
+        {
+            "imgUrl": "../../assets/home/collections2.jpg",
+            "title": "COLLECTION-2"
+        },
+        {
+            "imgUrl": "../../assets/home/collections3.jpg",
+            "title": "COLLECTION-3"
+        },
+        {
+            "imgUrl": "../../assets/home/collections4.jpg",
+            "title": "COLLECTION-4"
+        }
+    ],
+    "selected": [
+        {
+            "imgUrl": "../../assets/home/p1.jpg",
+            "title": "CLASSIC DIAMOND RING"
+        },
+        {
+            "imgUrl": "../../assets/home/p2.jpg",
+            "title": "CLASSIC DIAMOND RING"
+        },
+        {
+            "imgUrl": "../../assets/home/p3.jpg",
+            "title": "CLASSIC DIAMOND RING"
+        },
+        {
+            "imgUrl": "../../assets/home/p4.jpg",
+            "title": "CLASSIC DIAMOND RING"
+        }
+    ],
+    "why": [
+        {
+            "imgUrl": "../../assets/home/icon1.png",
+            "title": "EXCELLENT QUALITY"
+        },
+        {
+            "imgUrl": "../../assets/home/icon2.png",
+            "title": "100% Certified Jewellery"
+        },
+        {
+            "imgUrl": "../../assets/home/icon3.png",
+            "title": "30 Money Back Guarantee"
+        },
+        {
+            "imgUrl": "../../assets/home/icon4.png",
+            "title": "Life Time Exchange & BuyBack"
+        },
+        {
+            "imgUrl": "../../assets/home/icon5.png",
+            "title": "Free One Year Insurance"
+        },
+        {
+            "imgUrl": "../../assets/home/icon6.png",
+            "title": "Free Shipping"
+        }
+    ],
+    "loved": [
+        {
+            "imgUrl": "../../assets/jewellery-collection/loved1.png",
+            "title": "forever love collection",
+            "shortDesc": "why wait for the perfect moment?"
+        },
+        {
+            "imgUrl": "../../assets/jewellery-collection/loved2.png",
+            "title": "switch",
+            "shortDesc": "fashion for the fickle minded!"
+        },
+        {
+            "imgUrl": "../../assets/jewellery-collection/loved3.png",
+            "title": "miracle plate collection",
+            "shortDesc": "seeing is believing."
+        }
+    ],
+    "popular": [
+        {
+            "imgUrl": "../../assets/jewellery-collection/popular1.png",
+            "title": "forever love collection",
+            "shortDesc": "why wait for the perfect moment?"
+        },
+        {
+            "imgUrl": "../../assets/jewellery-collection/popular2.png",
+            "title": "switch",
+            "shortDesc": "fashion for the fickle minded!"
+        },
+        {
+            "imgUrl": "../../assets/jewellery-collection/popular3.png",
+            "title": "miracle plate collection",
+            "shortDesc": "seeing is believing."
+        },
+        {
+            "imgUrl": "../../assets/jewellery-collection/popular4.png",
+            "title": "forever love collection",
+            "shortDesc": "why wait for the perfect moment?"
+        },
+        {
+            "imgUrl": "../../assets/jewellery-collection/popular5.png",
+            "title": "switch",
+            "shortDesc": "fashion for the fickle minded!"
+        },
+        {
+            "imgUrl": "../../assets/jewellery-collection/popular6.png",
+            "title": "miracle plate collection",
+            "shortDesc": "seeing is believing."
+        },
+        {
+            "imgUrl": "../../assets/jewellery-collection/popular7.png",
+            "title": "forever love collection",
+            "shortDesc": "why wait for the perfect moment?"
+        },
+        {
+            "imgUrl": "../../assets/jewellery-collection/popular8.png",
+            "title": "switch",
+            "shortDesc": "fashion for the fickle minded!"
+        },
+        {
+            "imgUrl": "../../assets/jewellery-collection/popular9.png",
+            "title": "miracle plate collection",
+            "shortDesc": "seeing is believing."
+        },
+        {
+            "imgUrl": "../../assets/jewellery-collection/popular10.png",
+            "title": "forever love collection",
+            "shortDesc": "why wait for the perfect moment?"
+        },
+        {
+            "imgUrl": "../../assets/jewellery-collection/popular11.png",
+            "title": "switch",
+            "shortDesc": "fashion for the fickle minded!"
+        },
+        {
+            "imgUrl": "../../assets/jewellery-collection/popular12.png",
+            "title": "miracle plate collection",
+            "shortDesc": "seeing is believing."
+        }
+    ]
+}

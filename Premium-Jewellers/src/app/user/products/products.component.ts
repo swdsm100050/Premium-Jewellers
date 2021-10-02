@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-products',
@@ -9,16 +9,11 @@ import { Component, OnInit } from '@angular/core';
 
 export class ProductsComponent implements OnInit {
 
-  products:any=[];
-  private url="../../assets/data/user/product-list.json";
-  constructor(private http: HttpClient){}
-  async getProducts(){
-    let response = await this.http.get<any>(this.url).toPromise()
-      this.products=response
-      console.log(response)
-  }
+  user:any;
+  constructor(private service: UserService){}
+  
   ngOnInit(){
-    this.getProducts()
+    this.service.getUserData().subscribe(data => this.user=data);
   }
   filters=[
     {"title":"price","options":["low to high","high to low"]},

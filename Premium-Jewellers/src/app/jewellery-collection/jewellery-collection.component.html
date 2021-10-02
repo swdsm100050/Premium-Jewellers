@@ -21,7 +21,7 @@
         </div>
         <div class="box">
             <div class="row">
-                <div class="col-md-4 px-4 my-3" *ngFor="let item of loved">
+                <div class="col-md-4 px-4 my-3" *ngFor="let item of data.loved">
                     <div class="card">
                         <div class="img">
                             <img class="w-100" [src]="item.imgUrl" alt="">
@@ -57,7 +57,7 @@
         </div>
         <div class="box">
             <div class="row">
-                <div class="col-md-4 px-4 my-3" *ngFor="let item of popular">
+                <div class="col-md-4 px-4 my-3" *ngFor="let item of data.popular">
                     <div class="card">
                         <div class="img">
                             <img class="w-100" [src]="item.imgUrl" alt="">
@@ -81,7 +81,7 @@
             </div>
         </div>
         <owl-carousel-o [options]="customOptions">
-            <ng-container *ngFor="let slide of slides">
+            <ng-container *ngFor="let slide of data.slides">
                 <ng-template carouselSlide>
                     <div class="card p-4 border-0">
                         <button class="btn c-btn my-3"> {{slide.btn1}} </button><br>

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { RootService } from '../root.service';
 
 @Component({
   selector: 'app-jewellery-collection',
@@ -9,22 +10,15 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class JewelleryCollectionComponent implements OnInit {
 
-  constructor(private http:HttpClient) { }
-  loved:any=[]
-  async getLoved(){
-    let response=await this.http.get<any>("../assets/data/jewellery-collection/loved.json").toPromise()
-    this.loved=response
-  }
-  popular:any=[]
-  async getPopular(){
-    let response=await this.http.get<any>("../assets/data/jewellery-collection/popular.json").toPromise()
-    this.popular=response
-  }
-
+  constructor(private service:RootService) { }
+  data:any=[]
+ 
 
   ngOnInit(): void {
-    this.getLoved()
-    this.getPopular()
+   this.service.getData().subscribe(data => {
+     this.data=data
+     console.log(data)
+   })
   }
 
   slides=[

@@ -16,8 +16,7 @@
             <h2>A WORLD OF ELEGANCE</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum doloremque dignissimos nisi assumenda
               eaque corporis saepe vel, blanditiis quibusdam, nemo necessitatibus libero esse quos illum aperiam
-              molestias
-              quas veritatis itaque!</p>
+              molestias quas veritatis itaque!</p>
           </div>
         </div>
       </div>
@@ -28,8 +27,7 @@
             <h2>A WORLD OF ELEGANCE</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum doloremque dignissimos nisi assumenda
               eaque corporis saepe vel, blanditiis quibusdam, nemo necessitatibus libero esse quos illum aperiam
-              molestias
-              quas veritatis itaque!</p>
+              molestias quas veritatis itaque!</p>
           </div>
         </div>
       </div>
@@ -40,8 +38,7 @@
             <h2>A WORLD OF ELEGANCE</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum doloremque dignissimos nisi assumenda
               eaque corporis saepe vel, blanditiis quibusdam, nemo necessitatibus libero esse quos illum aperiam
-              molestias
-              quas veritatis itaque!</p>
+              molestias quas veritatis itaque!</p>
           </div>
         </div>
       </div>
@@ -93,7 +90,7 @@
     </div>
     <div class="box">
       <div class="row">
-        <div class="col-md-3" *ngFor="let s of selected">
+        <div class="col-md-3" *ngFor="let s of data.selected">
           <div class="card">
             <div class="img">
               <img [src]="s.imgUrl" alt="">
@@ -106,7 +103,6 @@
       </div>
       <div class="boxed">
         <div class="row no-gutters">
-
           <div class="col-md-6 p-0 d-flex align-items-center justify-content-center">
             <div class="desc">
               <div class="heading">
@@ -183,7 +179,7 @@
     </div>
     <div class="box">
       <div class="row">
-        <div class="col-md-3" *ngFor="let c of collections">
+        <div class="col-md-3" *ngFor="let c of data.collections">
           <div class="card">
             <div class="img">
               <img class="w-100 h-100" [src]="c.imgUrl" alt="">
@@ -206,7 +202,7 @@
     </div>
     <div class="box">
       <div class="row w-100 justify-content-md-around align-items-baseline">
-        <div class="col-md-2 text-center text-white" *ngFor="let c of why">
+        <div class="col-md-2 text-center text-white" *ngFor="let c of data.why">
           <div class="img">
             <img [src]="c.imgUrl" alt="">
           </div>
@@ -313,11 +309,9 @@
             </div>
             <div class="desc text-white">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ut, esse rem fugiat minima illum
-                dolorem
-                velit pariatur laudantium eligendi est, exercitationem sapiente ab assumenda ipsum dignissimos qui
-                veritatis facilis!</p>
+                dolorem velit pariatur laudantium eligendi est, exercitationem sapiente ab assumenda ipsum dignissimos
+                qui veritatis facilis!</p>
               <a href="">Read More <i class="bi bi-chevron-double-right mx-2"></i></a>
-
               <p class="px-2 py-4"><strong>Alia Bhatt</strong><br>Actor</p>
             </div>
           </div>

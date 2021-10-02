@@ -1,13 +1,12 @@
-<header>
+<header *ngFor="let head of masterSet.header">
     <section class="">
         <div class="logo">
-            <img src="../../../../assets/header/logo.png" alt="">
+            <img [src]="head.hero" alt="">
         </div>
         <nav class="navbar navbar-expand-lg p-0" [class.sticky]="isSticky">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img class="rounded-circle" style="width: 30px;height: 30px;"
-                        src="../../../../assets/header/logo.png" alt="">
+                    <img class="rounded-circle" style="width: 30px;height: 30px;" [src]="head.logo" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -16,48 +15,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="/high-jewellery" routerLinkActive="active"
-                                aria-current="page">high jewellery</a>
+                        <li class="nav-item" *ngFor="let links of head.navigation">
+                            <a class="nav-link" [routerLink]="links.route" routerLinkActive="active"
+                                aria-current="page">{{links.title}}</a>
                         </li>
-                        <!-- <div class="sub-menu">
-                            <div class="row">
-                                <div class="col-md-12" *ngFor="let data of jewellery">
-                                    <ul *ngFor="let c of data.rows">
-                                        <li *ngFor="let x of c.cols">{{x}}</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> -->
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="/jewellery-collection" routerLinkActive="active"
-                                aria-current="page">jewellery collections </a>
-                        </li>
-                        <!-- <div class="sub-menu">
-                            <h1>submenu</h1>
-                        </div> -->
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="/engagement" routerLinkActive="active"
-                                aria-current="page">engagement & bridal </a>
-                        </li>
-                        <!-- <div class="sub-menu">
-                            <h1>submenu</h1>
-                        </div> -->
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="/watches" routerLinkActive="active"
-                                aria-current="page">watches </a>
-                        </li>
-                        <!-- <div class="sub-menu">
-                            <h1>submenu</h1>
-                        </div> -->
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="/house" routerLinkActive="active" aria-current="page">the
-                                house </a>
-                        </li>
-                        <!-- <div class="sub-menu">
-                            <h1>submenu</h1>
-                        </div> -->
-
                     </ul>
                     <form class="d-flex">
                         <button class="btn p-btn" type="submit">STORE LOCATION</button>
@@ -66,6 +27,7 @@
                             <i class="bi bi-person-circle"></i>
                         </div>
                     </form>
+                    <div id="google_translate_element"></div>
                 </div>
             </div>
         </nav>

@@ -1,0 +1,167 @@
+{
+  "header": [
+    {
+      "hero": "../../../../assets/header/logo.png",
+      "logo": "../../../../assets/header/logo.png",
+      "navigation": [
+        {
+          "route": "/high-jewellery",
+          "title": "high jewellery"
+        },
+        {
+          "route": "/jewellery-collection",
+          "title": "jewellery collection"
+        },
+        {
+          "route": "/engagement",
+          "title": "engagement & bridal"
+        },
+        {
+          "route": "/watches",
+          "title": "watches"
+        },
+        {
+          "route": "/house",
+          "title": "house"
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "img": "../../../../assets/footer/subscribe-img.png",
+      "links": [
+        {
+          "class": "service",
+          "title": "Customer Service",
+          "sublinks": [
+            {
+              "name": "Contact Us",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "Product Care & Repair",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "Call Now: 9876543210",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "Make An Appointment",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "Frequently Asked Questions",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "Shipping & Returns",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "Tiffany Select Financing",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "Gift Cards",
+              "route": "/high-jewellery"
+            }
+          ]
+        },
+        {
+          "class": "company",
+          "title": "Our Company",
+          "sublinks": [
+            {
+              "name": "World Of Tiffany",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "Sustainability",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "CA Supply Chains ACT",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "Investors",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "Tiffany Careers",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "Website Policies",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "California Privacy",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "Do Not Sell My Info",
+              "route": "/high-jewellery"
+            }
+          ]
+        },
+        {
+          "class": "tiffany",
+          "title": "Related Tiffany Sites",
+          "sublinks": [
+            {
+              "name": "Wedding & Gift Registry",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "Business Accounts",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "Tiffany For The Press",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "The Tiffany & Co. Foundation",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "Site Index",
+              "route": "/high-jewellery"
+            }
+          ]
+        }
+      ],
+      "socialLinks": [
+        {
+          "class": "social",
+          "title": "Customer Service",
+          "sublinks": [
+            {
+              "name": "fa fa-facebook",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "fa fa-youtube-play",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "fa fa-twitter",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "fa fa-pinterest",
+              "route": "/high-jewellery"
+            },
+            {
+              "name": "fa fa-instagram",
+              "route": "/high-jewellery"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

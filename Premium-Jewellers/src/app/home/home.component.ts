@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { RootService } from '../root.service';
 
 @Component({
   selector: 'app-home',
@@ -8,27 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private http:HttpClient) { }
+  constructor(private service:RootService) { }
 
-  selected:any=[];
-  async getSelected(){
-    let response = await this.http.get<any>("../assets/data/home/selected.json").toPromise();
-    this.selected=response
-  }
-  collections:any=[];
-  async getCollections(){
-    let response = await this.http.get<any>("../assets/data/home/collections.json").toPromise();
-    this.collections=response
-  }
-  why:any=[];
-  async getWhy(){
-    let response = await this.http.get<any>("../assets/data/home/why.json").toPromise();
-    this.why=response
-  }
+  data:any=[];
+  
   ngOnInit(){
-    this.getSelected()
-    this.getCollections()
-    this.getWhy()
+  this.service.getData().subscribe(data => {
+    this.data=data
+    console.log(data)
+  })
   }
   
 

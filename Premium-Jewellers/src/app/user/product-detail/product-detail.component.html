@@ -16,7 +16,7 @@
                     </div>
                     <div class="slide-img">
                         <owl-carousel-o [options]="customOptions">
-                            <ng-container *ngFor="let slide of slides">
+                            <ng-container *ngFor="let slide of data.slides">
                                 <ng-template carouselSlide>
                                     <div class="img" style="margin: 10px 5px;">
                                         <img class="rounded img-thumbnail" [src]="slide.imgUrl" alt="">
@@ -62,7 +62,7 @@
                             <div class="collapse" id="collapseExample">
                                 <div class="card card-body my-3">
                                     <div class="row">
-                                        <div *ngFor="let service of price_variant" class="col-lg-3">
+                                        <div *ngFor="let service of data.price_variant" class="col-lg-3">
                                             <div class="cards rounded">
                                                 <div class="img">
                                                     <img [src]="service.img" alt="">
@@ -185,7 +185,7 @@
     </section>
     <section class="services">
         <div class="row">
-            <div *ngFor="let service of services" class="col-lg-2">
+            <div *ngFor="let service of data.services" class="col-lg-2">
                 <div class="card">
                     <div class="img">
                         <img [src]="service.img" alt="">
@@ -238,7 +238,7 @@
                     <div class="promise">
                         <h5>premium jewellers promise</h5>
                         <div class="row">
-                            <div *ngFor="let service of services" class="col-lg-4">
+                            <div *ngFor="let service of data.services" class="col-lg-4">
                                 <div class="card">
                                     <div class="img">
                                         <img [src]="service.img" alt="">
@@ -365,7 +365,7 @@
                                 <p>0 reviews</p>
                             </div>
                             <div class="rating-star">
-                                <div class="by-star" *ngFor="let star of stars">
+                                <div class="by-star" *ngFor="let star of data.stars">
                                     <div class="star">
                                         <span>{{star.rating}}</span>
                                         <i *ngFor="let no of star.rating_star" [class]="no.class"></i>
@@ -383,7 +383,7 @@
                         <h4 class="mx-auto text-capitalize">reviews</h4>
                     </div>
                 </div>
-                <div *ngFor="let review of reviews">
+                <div *ngFor="let review of data.reviews">
                     <review-card [review]="review"></review-card>
                 </div>
             </div>

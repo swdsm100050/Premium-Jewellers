@@ -1,7 +1,0 @@
-[
-    {"rating":"5","rating_star":[{"class":"fa fa-star"},{"class":"fa fa-star"},{"class":"fa fa-star"},{"class":"fa fa-star"},{"class":"fa fa-star-half-o"}],"count":"(12)"},
-    {"rating":"4","rating_star":[{"class":"fa fa-star"},{"class":"fa fa-star"},{"class":"fa fa-star"},{"class":"fa fa-star"},{"class":"fa fa-star-o"}],"count":"(12)"},
-    {"rating":"3","rating_star":[{"class":"fa fa-star"},{"class":"fa fa-star"},{"class":"fa fa-star"},{"class":"fa fa-star-o"},{"class":"fa fa-star-o"}],"count":"(12)"},
-    {"rating":"2","rating_star":[{"class":"fa fa-star"},{"class":"fa fa-star"},{"class":"fa fa-star-o"},{"class":"fa fa-star-o"},{"class":"fa fa-star-o"}],"count":"(12)"},
-    {"rating":"1","rating_star":[{"class":"fa fa-star"},{"class":"fa fa-star-o"},{"class":"fa fa-star-o"},{"class":"fa fa-star-o"},{"class":"fa fa-star-o"}],"count":"(12)"}
-  ]

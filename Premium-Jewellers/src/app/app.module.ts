@@ -21,7 +21,7 @@ import { UserModule } from './user/user.module';
     JewelleryCollectionComponent,
     EngagementComponent,
     WatchesComponent,
-    HouseComponent
+    HouseComponent,
   ],
   imports: [
     CarouselModule,
@@ -31,6 +31,7 @@ import { UserModule } from './user/user.module';
     SharedModule,
     UserModule,
     HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -8,42 +9,15 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
+  data:any=[];
 
-
-  constructor(private http:HttpClient) { }
-  services:any=[]
-  slides:any=[]
-  price_variant:any=[]
-  stars:any=[]
-  async getServices(){
-    let response= await this.http.get<any>("../../assets/data/user/product-detail/services.json").toPromise()
-    this.services=response
-  }
-  async getSlides(){
-    let response= await this.http.get<any>("../../assets/data/user/product-detail/slides.json").toPromise()
-    this.slides=response
-  }
-  async getPrice_variant(){
-    let response= await this.http.get<any>("../../assets/data/user/product-detail/price_variant.json").toPromise()
-    this.price_variant=response
-  }
-  async getStars(){
-    let response= await this.http.get<any>("../../assets/data/user/product-detail/stars.json").toPromise()
-    this.stars=response
-  }
+  constructor(private service:UserService) { }
   ngOnInit(): void {
-    this.getServices()
-    this.getSlides()
-    this.getPrice_variant()
-    this.getStars()
+   this.service.getUserData().subscribe((data)=> {
+     this.data=data 
+    })
   }
 
-  reviews=[
-    {"heroImg":"../../../assets/user/user.png","pImg":"../../../assets/user/product-detail/ring.jpg"},
-    {"heroImg":"../../../assets/user/user.png","pImg":"../../../assets/user/product-detail/ring.jpg"},
-    {"heroImg":"../../../assets/user/user.png","pImg":"../../../assets/user/product-detail/ring.jpg"},
-    {"heroImg":"../../../assets/user/user.png","pImg":"../../../assets/user/product-detail/ring.jpg"},
-  ]
   story=[
     {"title":"the inspiration","text":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum quos recusandae praesentium, nesciunt odio quaerat soluta veniam voluptate sit possimus cupiditate quas aut. Tempora fuga sunt eum consequatur eos."},
     {"title":"the inspiration","text":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum quos recusandae praesentium, nesciunt odio quaerat soluta veniam voluptate sit possimus cupiditate quas aut. Tempora fuga sunt eum consequatur eos."},
@@ -51,6 +25,8 @@ export class ProductDetailComponent implements OnInit {
   ]
   star=["fa fa-star-o","fa fa-star-o","fa fa-star-o","fa fa-star-o","fa fa-star-o",]
 
+
+ 
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,

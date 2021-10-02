@@ -5,6 +5,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { ReviewCardComponent } from './components/review-card/review-card.component';
+import { TextpipePipe } from '../textpipe.pipe';
 
 
 
@@ -13,17 +14,19 @@ import { ReviewCardComponent } from './components/review-card/review-card.compon
     HeaderComponent,
     FooterComponent,
     ProductCardComponent,
-    ReviewCardComponent
+    ReviewCardComponent,
+    TextpipePipe
   ],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   exports:[
     FooterComponent,
     HeaderComponent,
     ProductCardComponent,
-    ReviewCardComponent
+    ReviewCardComponent,
+    TextpipePipe
   ]
 })
 export class SharedModule { }

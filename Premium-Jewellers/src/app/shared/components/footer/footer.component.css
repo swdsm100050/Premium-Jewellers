@@ -77,10 +77,10 @@ footer .footer :is(.service, .company, .tiffany) li a:hover::after {
   width: 95%;
 }
 footer .footer ul .link {
-  font-size: 15px;
+  font-size: 13px;
 }
 footer .footer ul .title {
-  font-size: 20px;
+  font-size: 16px;
 }
 footer .footer .social ul {
   display: flex;
@@ -89,6 +89,7 @@ footer .footer .social ul li a {
   color: var(--primary-color);
 }
 footer .footer .social ul li a i {
+  font-size: 17px;
   padding: 5px;
 }
 footer .footer .social ul li:hover a i {
@@ -96,9 +97,9 @@ footer .footer .social ul li:hover a i {
   transition: all 0.3s;
 }
 footer .copy-rights p {
-  font-size: 16px;
+  font-size: 13px;
   color: #777;
-  word-spacing: 3px;
+  word-spacing: 0px;
 }
 footer .copy-rights p span {
   color: var(--primary-color);

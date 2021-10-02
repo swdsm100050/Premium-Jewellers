@@ -1,0 +1,755 @@
+{
+    "cards": [
+        {
+            "title": "engagement",
+            "col": "col-md-4",
+            "img": "../../../assets/user/dashboard/category1.png",
+            "brand_img": "../../../assets/user/dashboard/category-icon1.svg"
+        },
+        {
+            "title": "engagement",
+            "col": "col-md-8",
+            "img": "../../../assets/user/dashboard/category2.png",
+            "brand_img": "../../../assets/user/dashboard/category-icon2.svg"
+        },
+        {
+            "title": "engagement",
+            "col": "col-md-4",
+            "img": "../../../assets/user/dashboard/category3.png",
+            "brand_img": "../../../assets/user/dashboard/category-icon3.svg"
+        },
+        {
+            "title": "engagement",
+            "col": "col-md-4",
+            "img": "../../../assets/user/dashboard/category4.png",
+            "brand_img": "../../../assets/user/dashboard/category-icon4.svg"
+        },
+        {
+            "title": "engagement",
+            "col": "col-md-4",
+            "img": "../../../assets/user/dashboard/category5.png",
+            "brand_img": "../../../assets/user/dashboard/category-icon5.svg"
+        }
+    ],
+    "carousal-product": [
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        }
+    ],
+    "features": [
+        {
+            "svg_url": "../../../assets/user/dashboard/feature1.svg",
+            "title": "excellent jewellery quility"
+        },
+        {
+            "svg_url": "../../../assets/user/dashboard/feature2.svg",
+            "title": "excellent jewellery quility"
+        },
+        {
+            "svg_url": "../../../assets/user/dashboard/feature3.svg",
+            "title": "excellent jewellery quility"
+        },
+        {
+            "svg_url": "../../../assets/user/dashboard/feature4.svg",
+            "title": "excellent jewellery quility"
+        },
+        {
+            "svg_url": "../../../assets/user/dashboard/feature5.svg",
+            "title": "excellent jewellery quility"
+        },
+        {
+            "svg_url": "../../../assets/user/dashboard/feature6.svg",
+            "title": "excellent jewellery quility"
+        },
+        {
+            "svg_url": "../../../assets/user/dashboard/feature7.svg",
+            "title": "excellent jewellery quility"
+        },
+        {
+            "svg_url": "../../../assets/user/dashboard/feature8.svg",
+            "title": "excellent jewellery quility"
+        }
+    ],
+    "product-list": [
+        {
+            "isProduct": false,
+            "isOffer": true,
+            "p_imgUrl1": "../../../assets/user/products/offer3.png"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": false,
+            "isOffer": true,
+            "p_imgUrl1": "../../../assets/user/products/offer4.png"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": false,
+            "isOffer": true,
+            "p_imgUrl1": "../../../assets/user/products/offer3.png"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": false,
+            "isOffer": true,
+            "p_imgUrl1": "../../../assets/user/products/offer3.png"
+        },
+        {
+            "isProduct": false,
+            "isOffer": true,
+            "p_imgUrl1": "../../../assets/user/products/offer4.png"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": false,
+            "isOffer": true,
+            "p_imgUrl1": "../../../assets/user/products/offer2.png"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        },
+        {
+            "isProduct": true,
+            "isOffer": false,
+            "p_imgUrl1": "../../../assets/user/dashboard/category33.png",
+            "p_imgUrl2": "../../../assets/user/dashboard/category33.png",
+            "title": "pauletta glo diamond ring",
+            "mrp": "140000",
+            "discount": "4000"
+        }
+    ],
+    "price_variant": [
+        {
+            "title": "excellent quality",
+            "img": "../../../assets/home/icon1.png"
+        },
+        {
+            "title": "excellent quality",
+            "img": "../../../assets/home/icon1.png"
+        },
+        {
+            "title": "excellent quality",
+            "img": "../../../assets/home/icon1.png"
+        },
+        {
+            "title": "excellent quality",
+            "img": "../../../assets/home/icon1.png"
+        }
+    ],
+    "services": [
+        {
+            "title": "excellent quality",
+            "img": "../../../assets/user/dashboard/feature1.svg"
+        },
+        {
+            "title": "excellent quality",
+            "img": "../../../assets/user/dashboard/feature2.svg"
+        },
+        {
+            "title": "excellent quality",
+            "img": "../../../assets/user/dashboard/feature3.svg"
+        },
+        {
+            "title": "excellent quality",
+            "img": "../../../assets/user/dashboard/feature4.svg"
+        },
+        {
+            "title": "excellent quality",
+            "img": "../../../assets/user/dashboard/feature5.svg"
+        },
+        {
+            "title": "excellent quality",
+            "img": "../../../assets/user/dashboard/feature6.svg"
+        }
+    ],
+    "slides": [
+        {
+            "imgUrl": "../../../assets/user/dashboard/category33.png"
+        },
+        {
+            "imgUrl": "../../../assets/user/dashboard/category33.png"
+        },
+        {
+            "imgUrl": "../../../assets/user/dashboard/category33.png"
+        },
+        {
+            "imgUrl": "../../../assets/user/dashboard/category33.png"
+        },
+        {
+            "imgUrl": "../../../assets/user/dashboard/category33.png"
+        }
+    ],
+    "stars": [
+        {
+            "rating": "5",
+            "rating_star": [
+                {
+                    "class": "fa fa-star"
+                },
+                {
+                    "class": "fa fa-star"
+                },
+                {
+                    "class": "fa fa-star"
+                },
+                {
+                    "class": "fa fa-star"
+                },
+                {
+                    "class": "fa fa-star-half-o"
+                }
+            ],
+            "count": "(12)"
+        },
+        {
+            "rating": "4",
+            "rating_star": [
+                {
+                    "class": "fa fa-star"
+                },
+                {
+                    "class": "fa fa-star"
+                },
+                {
+                    "class": "fa fa-star"
+                },
+                {
+                    "class": "fa fa-star"
+                },
+                {
+                    "class": "fa fa-star-o"
+                }
+            ],
+            "count": "(12)"
+        },
+        {
+            "rating": "3",
+            "rating_star": [
+                {
+                    "class": "fa fa-star"
+                },
+                {
+                    "class": "fa fa-star"
+                },
+                {
+                    "class": "fa fa-star"
+                },
+                {
+                    "class": "fa fa-star-o"
+                },
+                {
+                    "class": "fa fa-star-o"
+                }
+            ],
+            "count": "(12)"
+        },
+        {
+            "rating": "2",
+            "rating_star": [
+                {
+                    "class": "fa fa-star"
+                },
+                {
+                    "class": "fa fa-star"
+                },
+                {
+                    "class": "fa fa-star-o"
+                },
+                {
+                    "class": "fa fa-star-o"
+                },
+                {
+                    "class": "fa fa-star-o"
+                }
+            ],
+            "count": "(12)"
+        },
+        {
+            "rating": "1",
+            "rating_star": [
+                {
+                    "class": "fa fa-star"
+                },
+                {
+                    "class": "fa fa-star-o"
+                },
+                {
+                    "class": "fa fa-star-o"
+                },
+                {
+                    "class": "fa fa-star-o"
+                },
+                {
+                    "class": "fa fa-star-o"
+                }
+            ],
+            "count": "(12)"
+        }
+    ],
+    "reviews": [
+        {
+            "heroImg": "../../../assets/user/user.png",
+            "pImg": "../../../assets/user/product-detail/ring.jpg",
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, totam suscipit eos itaque aliquid voluptate cupiditate nam voluptates dolores! Repellendus consequatur nesciunt deserunt expedita animi nemo laudantium temporibus consectetur esse!"
+        },
+        {
+            "heroImg": "../../../assets/user/user.png",
+            "pImg": "../../../assets/user/product-detail/ring.jpg",
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, totam suscipit eos itaque aliquid voluptate cupiditate nam voluptates dolores! Repellendus consequatur nesciunt deserunt expedita animi nemo laudantium temporibus consectetur esse!"
+        },
+        {
+            "heroImg": "../../../assets/user/user.png",
+            "pImg": "../../../assets/user/product-detail/ring.jpg",
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, totam suscipit eos itaque aliquid voluptate cupiditate nam voluptates dolores! Repellendus consequatur nesciunt deserunt expedita animi nemo laudantium temporibus consectetur esse!"
+        }
+    ]
+}

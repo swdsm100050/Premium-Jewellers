@@ -17,14 +17,14 @@ import { SharedModule } from '../shared/shared.module';
     UserComponent,
     DashboardComponent,
     ProductsComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
   ],
   imports: [
     CommonModule,
     AppRoutingModule,
     CarouselModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [],
 })

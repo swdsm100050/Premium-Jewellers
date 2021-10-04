@@ -1,11 +1,11 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'user',
-  templateUrl: './user.component.html',
-  styleUrls: ['./user.component.css']
+  selector: 'app-user',
+  templateUrl: './brand.component.html',
+  styleUrls: ['./brand.component.css']
 })
-export class UserComponent implements OnInit {
+export class BrandComponent implements OnInit {
   isSticky = false;
   constructor() { }
 

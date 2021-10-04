@@ -1,4 +1,4 @@
-<div *ngIf="product.isProduct" class="card">
+<div *ngIf="product.isProduct" class="card" [routerLink]="product.route">
     <div class="img">
         <img [src]="product.p_imgUrl2" alt="">
         <img [src]="product.p_imgUrl1" alt="">
@@ -27,7 +27,7 @@
 </div>
 <div *ngIf="product.isOffer" class="d-flex align-items-center justify-content-center">
     <div class="img">
-        <a href="">
+        <a>
             <img [src]="product.p_imgUrl1" class="rounded" alt="">
         </a>
     </div>

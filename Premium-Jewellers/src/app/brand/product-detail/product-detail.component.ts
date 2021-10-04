@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { UserService } from '../user.service';
+import { BrandService } from '../brand.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -11,7 +11,7 @@ import { UserService } from '../user.service';
 export class ProductDetailComponent implements OnInit {
   data:any=[];
 
-  constructor(private service:UserService) { }
+  constructor(private service:BrandService) { }
   ngOnInit(): void {
    this.service.getUserData().subscribe((data)=> {
      this.data=data 

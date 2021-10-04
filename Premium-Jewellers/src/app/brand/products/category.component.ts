@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../user.service';
+import { BrandService } from '../brand.service';
 
 @Component({
   selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  templateUrl: './category.component.html',
+  styleUrls: ['./category.component.css']
 })
 
-export class ProductsComponent implements OnInit {
+export class CategoryComponent implements OnInit {
 
   user:any;
-  constructor(private service: UserService){}
+  constructor(private service: BrandService){}
   
   ngOnInit(){
     this.service.getUserData().subscribe(data => this.user=data);

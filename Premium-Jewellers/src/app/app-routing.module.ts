@@ -4,24 +4,29 @@ import { EngagementComponent } from './engagement/engagement.component';
 import { HomeComponent } from './home/home.component';
 import { HouseComponent } from './house/house.component';
 import { JewelleryCollectionComponent } from './jewellery-collection/jewellery-collection.component';
-import { DashboardComponent } from './user/dashboard/dashboard.component';
-import { ProductDetailComponent } from './user/product-detail/product-detail.component';
-import { ProductsComponent } from './user/products/products.component';
-import { UserComponent } from './user/user.component';
+import { CartComponent } from './brand/cart/cart.component';
+import { DashboardComponent } from './brand/dashboard/dashboard.component';
+import { ProductDetailComponent } from './brand/product-detail/product-detail.component';
+import { BrandComponent } from './brand/brand.component';
 import { WatchesComponent } from './watches/watches.component';
+import { UserComponent } from './user/user.component';
+import { CategoryComponent } from './brand/category/category.component';
 
 const routes: Routes = [
-  {path: '',redirectTo: '/high-jewellery',pathMatch: 'full'},
-  {path:'high-jewellery',component:HomeComponent},
-  {path:'jewellery-collection',component:JewelleryCollectionComponent},
+  {path: '',redirectTo: '/home',pathMatch: 'full'},
+  {path:'home',component:HomeComponent},
+  {path:'collection',component:JewelleryCollectionComponent},
   {path:'engagement',component:EngagementComponent},
   {path:'watches',component:WatchesComponent},
   {path:'house',component:HouseComponent},
-  {path:'user', component:UserComponent, children:[
+  {path:'brand', component:BrandComponent, children:[
     {path:'',component:DashboardComponent},
-    {path:'dashboard',component:DashboardComponent},
-    {path:'products',component:ProductsComponent},
-    {path:'productDetail',component:ProductDetailComponent},
+    {path:'category',component:CategoryComponent},
+    {path:'0',component:ProductDetailComponent},
+    {path:'cart',component:CartComponent},
+  ]},
+  {path:'user', component:UserComponent, children:[
+    {path:'',component:UserComponent},
   ]}
 ];
 

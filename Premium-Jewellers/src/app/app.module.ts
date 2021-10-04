@@ -12,6 +12,7 @@ import { JewelleryCollectionComponent } from './jewellery-collection/jewellery-c
 import { EngagementComponent } from './engagement/engagement.component';
 import { WatchesComponent } from './watches/watches.component';
 import { HouseComponent } from './house/house.component';
+import { BrandModule } from './brand/brand.module';
 import { UserModule } from './user/user.module';
 
 @NgModule({
@@ -28,10 +29,10 @@ import { UserModule } from './user/user.module';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    SharedModule,
-    UserModule,
     HttpClientModule,
-    
+    SharedModule,
+    BrandModule,
+    UserModule
   ],
   providers: [],
   bootstrap: [AppComponent],

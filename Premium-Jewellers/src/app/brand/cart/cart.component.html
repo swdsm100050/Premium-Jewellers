@@ -1,0 +1,70 @@
+<div class="container">
+    <section class="count">
+        <p>in cart - 2 items</p>
+    </section>
+    <section class="cart">
+        <div class="row">
+            <div class="col-lg-8">
+                <ng-container *ngFor="let p of productCart">
+                    <cart [p]="p"></cart>
+                </ng-container>
+            </div>
+            <div class="col-lg-4">
+                <div class="order">
+                    <div class="offer">
+                        <i class="bi bi-percent"></i>
+                        <p>apply to offers/coupon</p>
+                    </div>
+                    <div class="summary">
+                        <div class="head">
+                            <p>order summary</p>
+                        </div>
+                        <div class="list-coupon">
+                            <span><i class="bi bi-check-circle-fill"></i> coupon "SUPER50" applied successful</span>
+                            <span>remove</span>
+                        </div>
+                        <div class="t-item">
+                            <span>total item</span>
+                            <span>2 items</span>
+                        </div>
+                        <div class="item-list">
+                            <span>insurance</span>
+                            <span>₹400</span>
+                        </div>
+                        <div class="item-list">
+                            <span>insurance</span>
+                            <span>₹400</span>
+                        </div>
+                        <div class="item-list">
+                            <span>insurance</span>
+                            <span>₹400</span>
+                        </div>
+                        <div class="d-charge">
+                            <span>delivery charge (standart)</span>
+                            <span>free</span>
+                        </div>
+                        <div class="t-cost">
+                            <span>total cost</span>
+                            <span>₹4000</span>
+                        </div>
+                        <div class="checkout-btn">
+                            <button class="btn">proceed to checkout</button>
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">your jewellery is safely insured <i class="bi bi-info-circle"></i></label>
+                    </div>
+                    <div class="call-query">
+                        <p>need help?</p>
+                        <p><span><i class="bi bi-telephone-fill"></i>:</span>+1800987654</p>
+                        <p><span><i class="bi bi-chat-dots-fill"></i>:</span>chat with us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="continue">
+            <button class="btn">continue shopping <i class="bi bi-chevron-double-right"></i></button>
+        </div>
+    </section>
+</div>

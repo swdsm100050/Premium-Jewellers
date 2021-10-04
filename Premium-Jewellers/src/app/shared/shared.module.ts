@@ -6,6 +6,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { ReviewCardComponent } from './components/review-card/review-card.component';
 import { TextpipePipe } from '../textpipe.pipe';
+import { CartComponent } from './components/cart/cart.component';
 
 
 
@@ -15,7 +16,8 @@ import { TextpipePipe } from '../textpipe.pipe';
     FooterComponent,
     ProductCardComponent,
     ReviewCardComponent,
-    TextpipePipe
+    TextpipePipe,
+    CartComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +28,8 @@ import { TextpipePipe } from '../textpipe.pipe';
     HeaderComponent,
     ProductCardComponent,
     ReviewCardComponent,
-    TextpipePipe
+    TextpipePipe,
+    CartComponent
   ]
 })
 export class SharedModule { }

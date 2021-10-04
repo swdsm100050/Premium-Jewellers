@@ -1,0 +1,66 @@
+<div class="card">
+    <div class="card-bdy">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="img text-center">
+                    <img [src]="p.img" alt="">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="details">
+                    <div class="title">
+                        <p>{{p.title}}</p>
+                        <span>product code: {{p.code}}</span>
+                    </div>
+                    <div class="desc">
+                        <div class="row" *ngFor="let desc of p.descs">
+                            <div class="col-sm-4">
+                                <div class="name">
+                                    <span>{{desc.attr}}</span>
+                                    <span>:</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <span>{{desc.val}}</span>
+                            </div>
+                        </div>
+                        <div class="row quantity">
+                            <div class="col-sm-4">
+                                <div class="name">
+                                    <span>quantity</span>
+                                    <span>:</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 d-flex align-items-center">
+                                <a type="button" (click)="p.quantity = p.quantity - 1"><i
+                                        class="bi bi-dash-circle-fill"></i></a>
+                                <div class="inp">{{p.quantity}}</div>
+                                <a type="button" (click)="p.quantity = p.quantity + 1"><i
+                                        class="bi bi-plus-circle-fill"></i></a>
+                            </div>
+                        </div>
+                        <div class="row total">
+                            <div class="col-sm-4">
+                                <div class="name">
+                                    <span>total</span>
+                                    <span>:</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <strong>₹ {{p.total}}</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-foot">
+        <div class="delivery-date">
+            <p>expected delivery date:12-08-2021</p>
+        </div>
+        <div class="remove">
+            <i class="bi bi-trash-fill"></i> remove
+        </div>
+    </div>
+</div>

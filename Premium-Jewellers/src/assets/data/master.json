@@ -5,19 +5,19 @@
       "logo": "../../../../assets/header/logo.png",
       "navigation": [
         {
-          "route": "/high-jewellery",
+          "route": "/home",
           "title": "high jewellery"
         },
         {
-          "route": "/jewellery-collection",
+          "route": "/collection",
           "title": "jewellery collection"
         },
         {
-          "route": "/engagement",
+          "route": "/user",
           "title": "engagement & bridal"
         },
         {
-          "route": "/watches",
+          "route": "/user",
           "title": "watches"
         },
         {

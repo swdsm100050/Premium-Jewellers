@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class BrandService {
   url="../../assets/data/user.json"
   constructor(private http:HttpClient) { }
   getUserData(){

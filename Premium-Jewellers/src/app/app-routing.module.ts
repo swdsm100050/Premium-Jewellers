@@ -11,6 +11,7 @@ import { BrandComponent } from './brand/brand.component';
 import { WatchesComponent } from './watches/watches.component';
 import { UserComponent } from './user/user.component';
 import { CategoryComponent } from './brand/category/category.component';
+import { UserDashComponent } from './user/user-dash/user-dash.component';
 
 const routes: Routes = [
   {path: '',redirectTo: '/home',pathMatch: 'full'},
@@ -26,7 +27,7 @@ const routes: Routes = [
     {path:'cart',component:CartComponent},
   ]},
   {path:'user', component:UserComponent, children:[
-    {path:'',component:UserComponent},
+    {path:'',component:UserDashComponent},
   ]}
 ];
 

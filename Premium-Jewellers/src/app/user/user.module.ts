@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { UserComponent } from './user.component';
+import { UserDashComponent } from './user-dash/user-dash.component';
 
 
 
 @NgModule({
   declarations: [
-    UserComponent
+    UserComponent,
+    UserDashComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +18,6 @@ import { UserComponent } from './user.component';
     AppRoutingModule
   ],
   exports:[
-
   ]
 })
 export class UserModule { }

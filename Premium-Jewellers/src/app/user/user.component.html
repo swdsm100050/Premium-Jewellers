@@ -85,32 +85,74 @@
                         <p>welcome,</p>
                         <h4>altaf shaikh</h4>
                     </div>
-                    <div class="icon"><i class="bi bi-house-door"></i></div>
                 </div>
+                <div class="icon"><i class="bi bi-house-door"></i></div>
             </div>
-            <div class="navigation-body">
-                <ul class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Active</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
+            <div class="collapse show w-100" id="sidebar">
+                <div class="navigation-body">
+                    <div class="collapse show w-100" id="sidebar">
+                        <ul class="nav flex-column flex-nowrap overflow-hidden">
+                            <li class="nav-item item">
+                                <a class="nav-link text-truncate menu" data-toggle="collapse" data-target="#submenu2">
+                                    <div class="menu-item">
+                                        <i class="bi bi-person-circle"></i>
+                                        <span class="d-none d-sm-inline">dashboard</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="nav-link collapsed text-truncate menu" data-toggle="collapse"
+                                    data-target="#submenu1">
+                                    <div class="menu-item">
+                                        <i class="bi bi-receipt"></i>
+                                        <span class="d-none d-sm-inline">my orders</span>
+                                    </div>
+                                    <i class="bi bi-chevron-down"></i>
+                                </a>
+                                <div class="collapse" id="submenu1" aria-expanded="false">
+                                    <ul class="flex-column nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link py-0"><span>Orders</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link py-0"><span>open orders</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link collapsed py-1"><span>Cancel Orders</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link py-0"><span>Returned Orders</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="nav-link text-truncate"><i class="bi bi-wallet2"></i>
+                                    <span class="d-none d-sm-inline">scheme</span></a>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="nav-link text-truncate"><i class="bi bi-bag-check"></i>
+                                    <span class="d-none d-sm-inline">shoppingCart</span></a>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="nav-link text-truncate"><i class="bi bi-suit-heart"></i>
+                                    <span class="d-none d-sm-inline">try @ home</span></a>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="nav-link text-truncate"><i class="bi bi-credit-card-2-front"></i>
+                                    <span class="d-none d-sm-inline">book appointment</span></a>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="nav-link text-truncate"><i class="bi bi-info-circle"></i>
+                                    <span class="d-none d-sm-inline">wishlist</span></a>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="nav-link text-truncate"><i class="bi bi-box-arrow-left"></i>
+                                    <span class="d-none d-sm-inline">my account</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

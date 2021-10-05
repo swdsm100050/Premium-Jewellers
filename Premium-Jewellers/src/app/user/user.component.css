@@ -244,3 +244,16 @@ footer .copy-rights .social .link a:hover i {
   transform: scale(1.2);
   transition: all 0.5s;
 }
+.side-bar {
+  width: 25%;
+  background: #eee;
+}
+.side-bar .navigation .navigation-header {
+  background: #ccc;
+}
+.side-bar .navigation .navigation-header .user-details {
+  display: flex;
+}
+.side-bar .navigation .navigation-header .user-details .img img {
+  width: 100px;
+}

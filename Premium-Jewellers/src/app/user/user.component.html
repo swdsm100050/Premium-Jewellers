@@ -76,7 +76,7 @@
     </nav>
 </header>
 <div class="container">
-    <main class="d-flex">
+    <main>
         <div class="side-bar">
             <div class="navigation">
                 <div class="navigation-header">
@@ -161,10 +161,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="logout text-center">
+                    <button class="btn" type="button">logout</button>
+                </div>
             </div>
         </div>
-        <router-outlet></router-outlet>
-        <router-outlet name="user"></router-outlet>
+        <div class="right-section">
+            <router-outlet></router-outlet>
+            <router-outlet name="user"></router-outlet>
+        </div>
     </main>
 </div>
 <footer>

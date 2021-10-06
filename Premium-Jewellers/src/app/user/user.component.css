@@ -247,14 +247,28 @@ footer .copy-rights .social .link a:hover i {
 main {
   display: flex;
 }
-main router-outlet:nth-child(2) {
-  /* padding-left: 15px;
-  min-width: 100vh;
-  min-height: 100vh; */
+.right-section {
+  width: 75%;
+  padding: 25px;
 }
 .side-bar {
   width: 25%;
   background: #e6d0db;
+  height: fit-content;
+}
+.side-bar .navigation .logout button {
+  padding: 0.5rem 1rem;
+  margin: 2rem 0 1rem 0;
+  border: 2px solid var(--primary-bg);
+  color: var(--primary-bg);
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.3s ease-out;
+}
+.side-bar .navigation .logout button:hover {
+  background: #cea2ba;
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
 }
 .side-bar .navigation .navigation-header {
   background: #b57396;
@@ -281,7 +295,7 @@ main router-outlet:nth-child(2) {
 .side-bar .navigation .navigation-body .nav .nav-item:hover {
   background: var(--primary-bg);
   transform: translateX(0px);
-  /* transition: all 0.2s ease-in-out; */
+  transition: all 0s ease-in-out;
   color: #fff;
 }
 .side-bar .navigation .navigation-body .nav .nav-item:hover .nav-link {

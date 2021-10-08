@@ -255,6 +255,8 @@ main {
   width: 25%;
   background: #e6d0db;
   height: fit-content;
+  position: sticky;
+  top: 40px;
 }
 .side-bar .navigation .logout button {
   padding: 0.5rem 1rem;
@@ -291,6 +293,8 @@ main {
   text-transform: capitalize;
 }
 .side-bar .navigation .navigation-body .nav .nav-item {
+  border-bottom: 1px solid #85175485;
+  border-bottom-style: dashed;
 }
 .side-bar .navigation .navigation-body .nav .nav-item:hover {
   background: var(--primary-bg);

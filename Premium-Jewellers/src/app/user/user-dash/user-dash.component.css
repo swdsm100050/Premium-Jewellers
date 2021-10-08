@@ -118,3 +118,215 @@
   margin-top: 45px;
   width: -webkit-fill-available;
 }
+.box .tab-content .address {
+  background: #eee;
+  padding: 25px;
+}
+.box .tab-content .address .head {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.box .tab-content .address .head h4 {
+  margin: 0;
+}
+.box .tab-content .address .head a {
+  color: var(--primary-bg);
+}
+.box .tab-content .address .display-card {
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #eee;
+  padding: 25px;
+  margin: 25px 0;
+  border: 1px solid var(--primary-bg);
+}
+.box .tab-content .address .display-card .title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.box .tab-content .address .display-card .title a {
+  color: var(--primary-bg);
+}
+.box .tab-content .address .display-card .detail .name p {
+  margin-bottom: 5px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.box .tab-content .address .display-card .detail .phone {
+  margin-bottom: 5px;
+  color: #777;
+  font-size: 14px;
+}
+.box .tab-content .address .display-card .detail .addrs {
+  font-size: 14px;
+  color: #555;
+}
+.box .tab-content .address .display-card .detail .remove-btn {
+  text-align: end;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.box .tab-content .address .display-card .detail .remove-btn:hover {
+  color: var(--primary-bg);
+  transition: all 0.3s;
+}
+.box .tab-content .address form {
+  margin-top: 25px;
+  text-transform: capitalize;
+}
+.box .tab-content .address form .title {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.box .tab-content .address form > div > div {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px;
+}
+.box .tab-content .address form > div > div input,
+.box .tab-content .address form > div > div select {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: none;
+  border: 0;
+  background: transparent;
+  border-bottom: 2px solid #999;
+}
+.box .tab-content .address form > div > div input::placeholder {
+  font-size: 13px;
+  color: #999;
+}
+.box .tab-content .address form > div > div label {
+  font-size: 14px;
+  color: #777;
+}
+/* .box .tab-content .address form > div > div label ~ input:focus {
+  transform: translateY(-20px);
+}
+.box .tab-content .address form > div > div label ~ input:not(:focus) {
+  transform: translateY(0px);
+} */
+.box .tab-content .address form > div > div input:focus + label {
+  color: var(--primary-bg);
+}
+.box .tab-content .address form > div > div input:focus {
+  border-bottom: 2px solid var(--primary-bg);
+}
+.box .tab-content .address form > div .checkbox {
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+  flex-direction: revert;
+}
+.box .tab-content .address form > div .checkbox label {
+  font-size: 18px;
+}
+.box .tab-content .address form .submit button {
+  color: #fff;
+  background: var(--primary-bg);
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: 500;
+  border: 0;
+  box-shadow: 0 0 10px #999;
+  margin: 45px 0px 0px 25px;
+}
+.box .tab-content .address form .submit a {
+  padding: 0.5rem 3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 10px #00000052;
+  font-weight: 500;
+}
+.box .tab-content .payments {
+  background: #eee;
+}
+.box .tab-content .payments .nav {
+  padding: 0;
+  background: #ccc;
+  margin: 0;
+  text-transform: capitalize;
+}
+.box .tab-content .payments .nav .nav-item {
+  padding: 0;
+}
+.box .tab-content .payments .nav .nav-link {
+  width: 50%;
+  font-size: 20px;
+  font-weight: 400;
+  border: 0;
+  padding: 3px 0;
+  background: #ccc;
+  color: #000;
+}
+.box .tab-content .payments .nav .nav-link.active {
+  color: #fff;
+  background: var(--primary-bg);
+}
+.box .tab-content .payments .wallet {
+  padding-bottom: 25px;
+}
+.box .tab-content .payments .wallet .card {
+  text-align: center;
+  border: 0;
+  border-radius: 0;
+  background: #e6d0db;
+}
+.box .tab-content .payments .wallet .card .card-head {
+  background: #b57396;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+}
+.box .tab-content .payments .wallet .card .card-body {
+}
+.box .tab-content .payments .wallet .card .card-body .text {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.box .tab-content .payments .wallet .card .card-body .add-text {
+  font-size: 14px;
+}
+.box .tab-content .payments .wallet .card .card-body h6 {
+  margin: 25px 0px;
+}
+.box .tab-content .payments .wallet .card .card-body h6 span {
+  font-size: 30px;
+}
+.box .tab-content .payments .wallet .card .card-body .amount-btn {
+  border: 1px solid var(--primary-bg);
+  width: -webkit-fill-available;
+  margin: 10px 0px;
+  border-radius: 5px;
+  background: #e6d0db;
+}
+.box .tab-content .payments .wallet .card .card-body .submit button {
+  background: var(--primary-bg);
+  color: #fff;
+  text-transform: capitalize;
+  margin: 10px 0px;
+}
+.box .tab-content .payments .wallet .card .card-body .terms a {
+  font-size: 12px;
+  color: #555;
+  text-transform: capitalize;
+}
+.box .tab-content .payments .wallet .view-detail {
+  text-align: center;
+}
+.box .tab-content .payments .wallet .view-detail a {
+  text-transform: capitalize;
+  color: #888;
+}
+.box .tab-content .payments .wallet .view-detail a:hover {
+  color: #555;
+  text-decoration: underline;
+}

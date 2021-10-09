@@ -13,7 +13,7 @@ export class CategoryComponent implements OnInit {
   constructor(private service: BrandService){}
   
   ngOnInit(){
-    this.service.getUserData().subscribe(data => this.user=data);
+    this.service.getUserData().subscribe(data =>this.user=data);
   }
   filters=[
     {"title":"price","options":["low to high","high to low"]},

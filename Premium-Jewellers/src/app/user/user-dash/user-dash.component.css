@@ -238,12 +238,13 @@
   margin: 45px 0px 0px 25px;
 }
 .box .tab-content .address form .submit a {
-  padding: 0.5rem 3rem;
-  border: 1px solid #ccc;
+  background: transparent;
+  border: 1px solid var(--primary-bg);
+  padding: 0.5rem 2rem;
   border-radius: 5px;
-  background: #fff;
-  box-shadow: 0px 0px 10px #00000052;
-  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--primary-bg);
+  cursor: pointer;
 }
 .box .tab-content .payments {
   background: #eee;
@@ -270,9 +271,7 @@
   color: #fff;
   background: var(--primary-bg);
 }
-.box .tab-content .payments .wallet {
-  padding-bottom: 25px;
-}
+
 .box .tab-content .payments .wallet .card {
   text-align: center;
   border: 0;
@@ -286,8 +285,8 @@
   font-weight: 500;
   color: #fff;
 }
-.box .tab-content .payments .wallet .card .card-body {
-}
+/* .box .tab-content .payments .wallet .card .card-body {
+} */
 .box .tab-content .payments .wallet .card .card-body .text {
   text-transform: capitalize;
   font-size: 14px;
@@ -329,4 +328,252 @@
 .box .tab-content .payments .wallet .view-detail a:hover {
   color: #555;
   text-decoration: underline;
+}
+.box .tab-content .payments .wallet table {
+  text-transform: capitalize;
+  background: #fff;
+  margin: 25px 0px 0px 0px;
+}
+.box .tab-content .payments .wallet table thead .head {
+  background: #ddd;
+}
+.box .tab-content .payments .saved-card {
+  padding: 25px;
+}
+.box .tab-content .payments .saved-card .top {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.box .tab-content .payments .saved-card .top a {
+  color: var(--primary-bg);
+}
+.box .tab-content .payments .saved-card .active-card .card {
+  padding: 15px;
+  border: 0;
+  box-shadow: 0px 0px 10px #ccc;
+  border-radius: 15px;
+  margin: 10px 0px;
+}
+.box .tab-content .payments .saved-card .active-card .card .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box .tab-content .payments .saved-card .active-card .card .top .comp {
+  display: flex;
+  align-items: center;
+}
+.box .tab-content .payments .saved-card .active-card .card .top .comp img {
+  width: 80px;
+  padding: 0 15px;
+  height: 30px;
+}
+.box .tab-content .payments .saved-card .active-card .card .top .comp a {
+  border: 1px solid var(--primary-bg);
+  padding: 0px 15px;
+  font-weight: 600;
+  border-radius: 2px;
+}
+.box .tab-content .payments .saved-card .active-card .card .top .expirey p {
+  font-size: 16px;
+  margin: 0;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.box
+  .tab-content
+  .payments
+  .saved-card
+  .active-card
+  .card
+  .top
+  .expirey
+  p
+  span {
+  font-size: 14px;
+  font-weight: normal;
+}
+.box .tab-content .payments .saved-card .active-card .card .bot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.box .tab-content .payments .saved-card .active-card .card .bot p {
+  margin: 0;
+  font-size: 18px;
+  color: #888;
+}
+.box .tab-content .payments .saved-card .active-card .card .bot .icon i {
+  font-size: 20px;
+  color: var(--primary-bg);
+}
+.box .tab-content .payments .saved-card form {
+  margin-top: 25px;
+}
+.box .tab-content .payments .saved-card form .group label {
+  font-size: 18px;
+}
+.box .tab-content .payments .saved-card form .group {
+  display: flex;
+  align-items: center;
+  grid-gap: 5px;
+  margin-right: 25px;
+}
+.box .tab-content .payments .saved-card form .group input {
+  width: auto;
+}
+.box .tab-content .payments .saved-card form input::placeholder {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.box .tab-content .payments .saved-card form input,
+.box .tab-content .payments .saved-card form select {
+  font-size: 18px;
+  color: #888;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #999;
+  margin: 10px 0px;
+  width: -webkit-fill-available;
+}
+.box .tab-content .payments .saved-card form label {
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #555;
+}
+.box .tab-content .payments .saved-card form .btns {
+  margin-top: 25px;
+  display: flex;
+  grid-gap: 25px;
+}
+.box .tab-content .payments .saved-card form .btns a {
+  background: transparent;
+  border: 1px solid var(--primary-bg);
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  text-transform: capitalize;
+  color: var(--primary-bg);
+  cursor: pointer;
+}
+.box .tab-content .payments .saved-card form .btns button {
+  background: var(--primary-bg);
+  color: #fff;
+  text-transform: capitalize;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.box .tab-content .profile form {
+  margin-top: 25px;
+  text-transform: capitalize;
+}
+.box .tab-content .profile form .title {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.box .tab-content .profile form > div > div {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px;
+}
+.box .tab-content .profile form > div > div input {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: none;
+  border: 0;
+  background: transparent;
+  border-bottom: 2px solid #999;
+}
+.box .tab-content .change-password {
+  padding: 25px;
+  background: #eee;
+}
+.box .tab-content .change-password form {
+  text-transform: capitalize;
+}
+.box .tab-content .change-password form .title {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.box .tab-content .change-password form > div > div > div {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px;
+}
+.box .tab-content .change-password form > div > div > div .input-grp {
+  display: flex;
+  border-bottom: 2px solid #999;
+}
+.box .tab-content .change-password form > div > div > div .input-grp i {
+  font-size: 20px;
+  color: var(--primary-bg);
+  cursor: pointer;
+}
+.box .tab-content .change-password form > div > div > div .input-grp input {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: none;
+  border: 0;
+  background: transparent;
+  width: -webkit-fill-available;
+}
+.box
+  .tab-content
+  .change-password
+  form
+  > div
+  > div
+  > div
+  .input-grp
+  input::placeholder {
+  font-size: 13px;
+  color: #999;
+}
+.box .tab-content .change-password form > div > div > div label {
+  font-size: 14px;
+  color: #777;
+}
+.box
+  .tab-content
+  .change-password
+  form
+  > div
+  > div
+  > div
+  .input-grp
+  input:focus
+  + label {
+  color: var(--primary-bg);
+}
+/* .box
+  .tab-content
+  .change-password
+  form
+  > div
+  > div
+  > div
+  .input-grp
+  input:focus {
+  border-bottom: 2px solid var(--primary-bg);
+} */
+.box .tab-content .change-password form .submit button {
+  color: #fff;
+  background: var(--primary-bg);
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: 500;
+  border: 0;
+  box-shadow: 0 0 10px #999;
+  margin: 25px 0 0 0px;
 }
